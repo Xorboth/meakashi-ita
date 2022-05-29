@@ -1,0 +1,2221 @@
+void main()
+{
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("black", 400 );
+	PlayBGM( 1, "M_Denwa8k", 56, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 6000 );
+	SetValidityOfInput( TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	DrawSceneWithMask("background/si_h2", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　４年目のオヤシロさまの祟りが起きたことは、その翌日にお姉からの電話で知らされた。",
+		   NULL, "La mattina seguente al festival del Watanagashi, mia sorella mi chiama per informarmi che la maledizione ha colpito per la quarta volta.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　死んだのは悟史くんたちを苛めてきた、意地悪叔母だった。",
+		   NULL, "La vittima di quest'anno è la zia che ha sempre maltrattato Satoshi-kun e Satoko.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの悩みは、叔母と沙都子の関係にあるのだから、叔母の死は問題の解決を意味する。",
+		   NULL, "Finalmente, le sofferenze di Satoshi-kun avranno fine, dato che la radice di tutto era proprio la relazione tra sua zia e Satoko.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　不謹慎にも小躍りしてもよかったはず。",
+		   NULL, "Forse dovrei festeggiare,", Line_WaitForInput);
+	OutputLine(NULL, "だが私はそういう気持ちにはならなかった。",
+		   NULL, " ma per qualche motivo non sono dell'umore.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600814", 256, TRUE);
+	OutputLine(NULL, "「………犯人って、もう警察は目星をつけてるのかな。」",
+		   NULL, "\"... la polizia ha già dei sospetti?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私がぼそりと呟くと、受話器の向こうのお姉は、しばし口をつぐんだ。",
+		   NULL, "A queste mie parole, dall'altra parte del telefono cala il silenzio.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300172", 256, TRUE);
+	OutputLine(NULL, "「さぁね。",
+		   NULL, "\"Non lo so.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300173", 256, TRUE);
+	OutputLine(NULL, "大石の野郎がしつこく聞き込みをして回ってるみたい。",
+		   NULL, " Pare che Ooishi abbia iniziato a fare domande per il quartiere.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300174", 256, TRUE);
+	OutputLine(NULL, "犯人は近しい人間に違いないと思ってるようだね…。」",
+		   NULL, " Secondo lui il colpevole è qualcuno di molto vicino alla vittima.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私とお姉は一卵性。",
+		   NULL, "Visto che siamo gemelle,", Line_WaitForInput);
+	OutputLine(NULL, "同じ人間だからこそ、同じことを考える。",
+		   NULL, " io e mia sorella ragioniamo allo stesso modo.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから私が、叔母を殺したのは悟史くんかもしれないと漠然と考えるのと同じ様に、恐らくお姉も考えているに違いなかった。",
+		   NULL, "Perciò, se io credessi che è Satoshi-kun l'assassino che ha ucciso sua zia, allora probabilmente anche lei penserebbe la stessa cosa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、その部分をざわざわ口に出さずに端折り、言った。",
+		   NULL, "Motivo per cui non c'è bisogno di portare l'argomento a galla.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600815", 256, TRUE);
+	OutputLine(NULL, "「………悟史くんって、祭りの日にアリバイあります？」",
+		   NULL, "\"... Satoshi-kun ha un alibi per quel giorno...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300175", 256, TRUE);
+	OutputLine(NULL, "「ぇ、",
+		   NULL, "\"Eh?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "あ、",
+		   NULL, " Uhm...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ん、どうだろ…。」",
+		   NULL, " non saprei...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600816", 256, TRUE);
+	OutputLine(NULL, "「はぁ…。」",
+		   NULL, "\"Sigh...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は悪態をつくように深くため息を吐いた。",
+		   NULL, "Mi sfugge un sospiro sconsolato.", Line_Normal);
+	ClearMessage();
+
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	PlayBGM( 1, "semi_r", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600817", 256, TRUE);
+	OutputLine(NULL, "「馬鹿ですね。",
+		   NULL, "\"Ma sei scema?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600818", 256, TRUE);
+	OutputLine(NULL, "悟史くんは祭りに来ていた。",
+		   NULL, " Satoshi-kun era al festival.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600819", 256, TRUE);
+	OutputLine(NULL, "そういうことでいいじゃないですか。」",
+		   NULL, " L'hai visto anche tu, giusto?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300176", 256, TRUE);
+	OutputLine(NULL, "「ぁ……ん、……そうだよね。",
+		   NULL, "\"Ah... sì... certo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300177", 256, TRUE);
+	OutputLine(NULL, "気が利かなくてごめん…。」",
+		   NULL, " Scusa, me l'ero dimenticato...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　駄目押しに、もうひとつため息をついた。",
+		   NULL, "Tiro un altro sospiro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　馬鹿姉は、叔母が死んだ時点で悟史くんが疑われてもおかしくないことが分かっていながら、悟史くんのアリバイ工作について何も考えなかったのだ。",
+		   NULL, "Mia sorella è così ingenua da dimenticarsi di fornire un alibi per lui, che sicuramente sarà nella rosa dei sospetti a causa del legame che aveva con la zia.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300178", 256, TRUE);
+	OutputLine(NULL, "「…じゃあじゃあ…。",
+		   NULL, "\"... vuoi dire che...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300179", 256, TRUE);
+	OutputLine(NULL, "…やっぱり…悟史が…？」",
+		   NULL, " è stato Satoshi a...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600820", 256, TRUE);
+	OutputLine(NULL, "「悟史くんが殺したかどうかが問題じゃないでしょ。",
+		   NULL, "\"Non è importante chi sia stato.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600821", 256, TRUE);
+	OutputLine(NULL, "悟史くんが犯行の時間帯に、アリバイがあったかが重要なんです！",
+		   NULL, " La cosa importante è che Satoshi-kun abbia un alibi per ieri sera!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600822", 256, TRUE);
+	OutputLine(NULL, "　…ったく。」",
+		   NULL, " ... accidenti.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300180", 256, TRUE);
+	OutputLine(NULL, "「あ、…あとで警察がうちに来るみたいだから、来たら悟史は祭りで一緒だったって言うよ。」",
+		   NULL, "\"Ecco... più tardi la polizia verrà a casa nostra. Gli dirò che l'ho visto mentre ero in giro per il festival.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600823", 256, TRUE);
+	OutputLine(NULL, "「……お姉？",
+		   NULL, "\"... sorella?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600824", 256, TRUE);
+	OutputLine(NULL, "　取ってつけた嘘なんかなぁんの役にも立たないです。",
+		   NULL, " Mentire così spudoratamente non sortirà alcun effetto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600825", 256, TRUE);
+	OutputLine(NULL, "何も手を打たなかったなら、今さら小細工しても無駄ってことです。",
+		   NULL, "Se non hai fatto niente per creargli un alibi, allora ormai è troppo tardi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600826", 256, TRUE);
+	OutputLine(NULL, "せいぜい正直に喋って下さい。",
+		   NULL, " Sii onesta nelle tue risposte.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600827", 256, TRUE);
+	OutputLine(NULL, "お姉は芝居が下手なんだから、変に意識するとかえって勘繰られますからね？」",
+		   NULL, "Non sei brava a mentire, e finirai soltanto per alimentare i sospetti nei suoi confronti, capito?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300181", 256, TRUE);
+	OutputLine(NULL, "「…………ん、…ごめん…。」",
+		   NULL, "\"... sì... scusa...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音はすっかり落ち込んでいるようだった。冗談じゃない、落ち込みたいのは私の方なんだ。",
+		   NULL, "Mion ha un tono di voce abbattuto, anche se dovrei essere io quella giù di morale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お姉は普段はそこそこにやれるのだが、突発に対応できる臨機応変さがない。",
+		   NULL, "Di solito riesce a gestire bene le situazioni che le si presentano davanti, ma lo stesso non si può dire per le emergenze.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　仮にも園崎家の次期頭首の身なのだから、今からこんなざまでは先が思いやられる。",
+		   NULL, "Sono un po' preoccupata per il fatto che debba prendere le redini della famiglia Sonozaki.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お姉はそろそろ返事にも窮してきて、話題を変えたくなる頃だろうな、",
+		   NULL, "Immagino che ora mia sorella si senta in imbarazzo, e che perciò voglia cambiare argomento.", Line_WaitForInput);
+	OutputLine(NULL, "と思ったちょうどのタイミングで、お姉は話題を逸らした。",
+		   NULL, " Un attimo dopo, le cose vanno come avevo previsto.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 300, FALSE );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300182", 256, TRUE);
+	OutputLine(NULL, "「詩音、最近はあまりバイトに行けてなかったでしょ…？」",
+		   NULL, "\"Di recente non sei andata spesso al lavoro, vero, Shion...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600828", 256, TRUE);
+	OutputLine(NULL, "「…ご賢察痛み入ります。",
+		   NULL, "\"... putroppo no.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600829", 256, TRUE);
+	OutputLine(NULL, "お陰様で。」",
+		   NULL, " Per merito tuo.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300183", 256, TRUE);
+	OutputLine(NULL, "「あ、……うん、ごめん。",
+		   NULL, "\"Ah... sì, mi dispiace...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300184", 256, TRUE);
+	OutputLine(NULL, "…今日は私、夜まで姿を隠してるから、バイトに出られるんじゃない…？」",
+		   NULL, " rimarrò nascosta da qualche parte fino a stasera, quindi puoi andare al lavoro, se vuoi...\"", Line_Normal);
+	ClearMessage();
+	DrawScene("black", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　綿流しの事前打ち合わせやら準備やらのせいで、最近のお姉は公の場に出ずっぱりだった。",
+		   NULL, "Mia sorella ha sempre dovuto fare delle comparse in pubblico durante gli allestimenti per il festival e il giorno stesso del Watanagashi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音が公の場にずっといると、私は魅音のふりができない。",
+		   NULL, "Di conseguenza, finora non ho più potuto fingere di essere lei.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、バイトに行けないということだ。",
+		   NULL, "Non sono potuta neanche andare al lavoro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　生活費を自分で稼がなければならない私には、それはとても痛いことだった。",
+		   NULL, "Dato che ormai devo pensare a mantenermi da sola, è naturale che sia diventato un problema.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本当はバイトなどしたい気分ではない。",
+		   NULL, "In tutta onestà, non mi va di lavorare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だが、部屋でアンニュイな気分を楽しめるほど、私の財政状況は潤ってはいなかった。",
+		   NULL, "... ma non posso nemmeno rimanermene qua dentro con le mani in mano senza fare niente.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask("background/si_mansion", "maskleft", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　部屋を出て鍵を掛けていると、その音で私の外出に気付いたのか、隣の部屋の戸が開き、葛西が顔を覗かせた。",
+		   NULL, "Non appena mi chiudo alle spalle la porta del mio appartamento, da quello accanto spunta immediatamente Kasai.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500146", 256, TRUE);
+	OutputLine(NULL, "「詩音さん、お出掛けですか…？」",
+		   NULL, "\"Shion-san, sta uscendo...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600830", 256, TRUE);
+	OutputLine(NULL, "「そんなとこです。",
+		   NULL, "\"Sì.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600831", 256, TRUE);
+	OutputLine(NULL, "お姉が姿を隠してくれるそうなんで、久々にバイトに出ます。",
+		   NULL, " Vado al lavoro, dato che mia sorella oggi mi ha ritagliato un po' di tempo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600832", 256, TRUE);
+	OutputLine(NULL, "葛西、暇だったら叔父さんの店まで車を出してもらってもいい？」",
+		   NULL, " Kasai, riesci mica a darmi uno strappo fino al negozio?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500147", 256, TRUE);
+	OutputLine(NULL, "「…………詩音さん、しばらくはバイトを控えられた方がよろしくはないですか？",
+		   NULL, "\"......... Shion-san, non sarebbe meglio se si prendesse qualche giorno di riposo?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500148", 256, TRUE);
+	OutputLine(NULL, "　事件のせいで、警察は園崎家界隈を監視しているようですし。",
+		   NULL, " La polizia tiene ancora sotto stretta sorveglianza la residenza principale dei Sonozaki.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500149", 256, TRUE);
+	OutputLine(NULL, "あまり姿を表に出さない方がいいのではないかと思います。」",
+		   NULL, " Non penso sia una buona idea mostrarsi in pubblico.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600833", 256, TRUE);
+	OutputLine(NULL, "「お気遣いは嬉しいけど、バイトしないと食費もないわけですし。」",
+		   NULL, "\"Ti ringrazio per il pensiero, ma devo guadagnare qualcosa se voglio sopravvivere.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　こういう言い方をすると葛西が、食費くらい私が出しますなんて言いかねない。",
+		   NULL, "Kasai non esiterebbe un momento a propormi di accettare una sorta di donazione da parte sua.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask("background/sora", "maskdown", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、葛西にお金を無心しないというのはここでの生活を始めた時に、強く誓ったことだ。",
+		   NULL, "Tuttavia, ho giurato a me stessa che avrei vissuto con le mie sole forze e che non sarei più dipesa da lui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は、人の作ったルールなんて全然守らないが、だからこそ、自分の作ったルールだけは頑なに守りたかった。",
+		   NULL, "È vero che non obbedisco mai alle regole impostemi dagli altri, ma sono estremamente rigida su quelle che mi impongo da sola.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　葛西は、私が一度言い出したら絶対に聞かないことを知っていたから。",
+		   NULL, "Kasai sa bene che sono inamovibile su questa mia decisione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　事務的に何度か考え直すように言った後、あっさりと折れて車の用意をしてくれた。",
+		   NULL, "Così, dopo essersi ripetuto un altro paio di volte, giusto per rispettare la \"procedura\" di cordialità, decide infine di accompagnarmi in auto.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 2, 400, FALSE );
+	DrawScene("white", 400 );
+	PlayBGM( 1, "Mati", 24, 0 );
+	DrawScene("background/kuruma5_01", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　叔父さんの店へ車で行こうとすると、必ずこの信号で捕まる。",
+		   NULL, "Ogni volta che raggiungiamo il negozio di mio zio, ci fermiamo sempre allo stesso semaforo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　必ず捕まる、と分かっていても、やっぱり今日もまた捕まると、それはそれで不愉快だった。",
+		   NULL, "So che è una fermata obbligatoria, ma quest'oggi mi irrita più del dovuto.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　目の前の横断歩道を、とろとろと歩行者たちが横切る。",
+		   NULL, "Davanti all'automobile passano uno dopo l'altro i pedoni che attraversano le strisce.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その歩行者たちの中に、私は悟史くんにそっくりな人を見つけて驚く。",
+		   NULL, "In quel momento, tra i passanti, vedo con mia grande sorpresa un ragazzo che somiglia molto a Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……間違いなく悟史くんだった。",
+		   NULL, "... anzi, è proprio lui.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんとは、つい最近、電話で話したとは言え、その姿を見るのは本当に久しぶりだった。",
+		   NULL, "Nonostante abbiamo parlato pochi giorni fa al telefono, è passato parecchio tempo dall'ultima volta che ci siamo visti di persona.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600834", 256, TRUE);
+	OutputLine(NULL, "「葛西。",
+		   NULL, "\"Kasai.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600835", 256, TRUE);
+	OutputLine(NULL, "悪いけど叔父さんに、やっぱ今日のバイトは行けなくなったって伝えてくれる？",
+		   NULL, " Scusa, ma puoi dire a mio zio che oggi non posso venire?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600836", 256, TRUE);
+	OutputLine(NULL, "　私、ここで降ります。」",
+		   NULL, " Scendo qui.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500150", 256, TRUE);
+	OutputLine(NULL, "「え？",
+		   NULL, "\"Eh?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500151", 256, TRUE);
+	OutputLine(NULL, "　詩音さん？！」",
+		   NULL, " Shion-san?!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　葛西が何事かと聞き返すが、私は答えずに車を降りた。",
+		   NULL, "Kasai è colto alla sprovvista e non riesce a impedirmi di scendere dal veicolo.", Line_Normal);
+	ClearMessage();
+	DrawScene("background/sora", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　車道の信号は青になる。",
+		   NULL, "Il semaforo diventa verde.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "s_tr018b", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　葛西は私に向かって何か叫んでいるようだったが、後続車のクラクションに急かされ、仕方なく車を出す他なかった。",
+		   NULL, "L'auto dietro a quella di Kasai suona il clacson per intimargli di muoversi, al che Kasai provvede spingendo l'acceleratore e allontanandosi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは自転車だったが、歩く速度と大して変わらない遅いスピードだったので、私は簡単に追いついてその背中を叩くことができた。",
+		   NULL, "Satoshi-kun è salito sulla bici che aveva tra le mani e sta pedalando lentamente. Lo raggiungo in un lampo e gli do un colpetto sulla schiena.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 300, FALSE );
+	DrawSceneWithMask("background/mati3", "maskleft", 1, 0, 300 );
+	PlayBGM( 0, "demo_48khz", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600837", 256, TRUE);
+	OutputLine(NULL, "「はろろー。",
+		   NULL, "\"Hello.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600838", 256, TRUE);
+	OutputLine(NULL, "興宮で会うなんて奇遇ですね、悟史くん。」",
+		   NULL, " Non mi aspettavo di vederti a Okinomiya, Satoshi-kun.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が思いきりの笑顔で話しかけたなら。",
+		   NULL, "Se gli rivolgo la parola con il sorriso,", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんも同じくらいの笑顔で返してくれるかもしれない。",
+		   NULL, " forse mi risponderà a sua volta sorridendo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そう思い、私は最高の笑顔で話しかける。",
+		   NULL, "... perciò, con questo pensiero, cerco di sorridere nel modo più smagliante possibile.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200280", 256, TRUE);
+	OutputLine(NULL, "「……魅音。」",
+		   NULL, "\"... Mion.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その表情は相変わらず疲労の色が濃い。",
+		   NULL, "La sua solita aria stanca.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、その表情には、私の笑顔に少しでも応えようという意思が感じられた。",
+		   NULL, "Tuttavia, riesco a capire dal suo volto che sta cercando di sorridermi...", Line_WaitForInput);
+	OutputLine(NULL, "…私の心が途端にふわっと軽くなるのを感じた。",
+		   NULL, " e le mie preoccupazioni spariscono come neve al sole.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鏡がないからわからないけど、私の顔は一気に血色がよくなっているんだろうなと感じた。",
+		   NULL, "È difficile a dirsi, ma sento come se la mia pelle avesse ripreso un colorito più sano del solito.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　自分でもわかるくらいなんだから、脇で見ている悟史くんには、私がよっぽど上機嫌な顔をしているように見えるに違いなかった。",
+		   NULL, "Se riesco a capirlo io, deduco che persino Satoshi-kun riesca a intendere che parlare con lui mi rende felice.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200281", 256, TRUE);
+	OutputLine(NULL, "「何があったか知らないけど、…魅音が楽しそうだね。」",
+		   NULL, "\"Non so spiegarmelo ma... hai l'aria soddisfatta, Mion.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600839", 256, TRUE);
+	OutputLine(NULL, "「えぇ楽しいですよ？",
+		   NULL, "\"Sì, sono molto felice.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600840", 256, TRUE);
+	OutputLine(NULL, "　悟史くんの機嫌が良さそうなので、私もつられて機嫌が良くなっただけです。」",
+		   NULL, " Lo sono perché anche tu sembri felice, Satoshi-kun.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ちょっとだけ嫌味っぽく言って、目を細めて笑ってやると、悟史くんは少し照れるような表情を返してくれた。",
+		   NULL, "Accortosi che sto cercando di prenderlo in giro, Satoshi-kun fa una faccia come quella di chi si sente in imbarazzo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………こんな反応は、私にとって一番幸せだった日々を彷彿させる。",
+		   NULL, "... è come se fossimo tornati a quei giorni divertenti che abbiamo passato insieme.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、ますます私は上機嫌になるのだった。",
+		   NULL, "E mi sento ancor più felice di prima.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600841", 256, TRUE);
+	OutputLine(NULL, "「悟史くんこそ、何かあったんですか？",
+		   NULL, "\"Che cosa c'è, Satoshi-kun?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600842", 256, TRUE);
+	OutputLine(NULL, "　何か機嫌がよくなるようないいことがありましたか？」",
+		   NULL, " Ti è successo qualcosa di bello, per caso?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200282", 256, TRUE);
+	OutputLine(NULL, "「………いい事なんかないよ。",
+		   NULL, "\"... non proprio.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200283", 256, TRUE);
+	OutputLine(NULL, "…叔母さんが亡くなって、…警察とかご近所とか、いろいろ大変だよ。」",
+		   NULL, " Mia zia è morta e... ora devo sempre rapportarmi con la polizia e col vicinato...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　一瞬、私は失言してしまって、悟史くんをひどく落胆させてしまうのではないかと思った。",
+		   NULL, "Per un attimo, temo di avergli rivolto una domanda stupida che gli ha portato alla mente brutti ricordi.", Line_Normal);
+	ClearMessage();
+	DrawScene("background/sora", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、そんな私の焦りは本当に杞憂だった。",
+		   NULL, "Per fortuna, però, sembra star bene.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　言葉を返す悟史くんの顔には、陰りはありながらも、やさしい笑みが浮かんでいたからだ。",
+		   NULL, "All'inizio aggrotta le sopracciglia, ma basta poco perché torni ad avere sul viso quel sorriso gentile che tanto amo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、………何かの大きな仕事をやり遂げた時のような、疲労感、達成感。",
+		   NULL, "Ha l'aria... affaticata, ma di chi comunque sa di aver raggiunto un obiettivo importante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そういう雰囲気を感じた。",
+		   NULL, "O almeno, è questa l'impressione che mi dà.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、…私は確信した。",
+		   NULL, "Questo segnale... è la prova.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子を苛め抜いた意地悪叔母を、",
+		   NULL, "La prova che mi dimostra che l'assassino della zia violenta che ha sempre tormentato Satoko...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…彼が殺した。",
+		   NULL, " ... è lui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は何の証拠がなくとも、直感的にそれを理解するのだった。",
+		   NULL, "Non ho prove prettamente tangibili, ma l'istinto mi suggerisce solo questa possibilità.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから私はそういうのを全部端折る。",
+		   NULL, "Motivo per cui evito di fargli troppe domande.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんが叔母を殺す動機も、そこに至るほど追い詰められていることも。",
+		   NULL, "Conosco il motivo per cui Satoshi-kun abbia ucciso sua zia, nonché di quanto fosse stato messo alle corde da lei.", Line_WaitForInput);
+	OutputLine(NULL, "　取り巻く状況も環境も、",
+		   NULL, " Conosco l'ambiente famigliare in cui viveva.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そして悟史くんの気持ちも。",
+		   NULL, "... e, soprattutto, conosco i sentimenti di Satoshi-kun.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……全部わかっていたから。",
+		   NULL, " ...... so tutto.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そういうのを全部端折る。",
+		   NULL, "E quindi non faccio domande.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　呪縛のような何かから解放された彼を労いたくて、私は何事もなかったかのように笑いながら問い掛けた。",
+		   NULL, "Voglio solo festeggiare la sua liberazione dalla maledizione, quindi continuo a sorridere come se niente fosse e gli chiedo...", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(2, 7, "sprite/sato1_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/mati2", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600843", 256, TRUE);
+	OutputLine(NULL, "「悟史くんはどこかへお出掛けですか？",
+		   NULL, "\"Dove stai andando, Satoshi-kun?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600844", 256, TRUE);
+	OutputLine(NULL, "　あ、バイトかな？」",
+		   NULL, " A lavorare?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200284", 256, TRUE);
+	OutputLine(NULL, "「正解。",
+		   NULL, "\"Esatto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200285", 256, TRUE);
+	OutputLine(NULL, "…その前に寄り道なんだけどね。」",
+		   NULL, " Ma prima devo fermarmi in un posto.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600845", 256, TRUE);
+	OutputLine(NULL, "「…寄り道？」",
+		   NULL, "\"... in un posto?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200286", 256, TRUE);
+	OutputLine(NULL, "「あははは…。",
+		   NULL, "\"Ahahahah...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200287", 256, TRUE);
+	OutputLine(NULL, "毎日、ちゃんとショーケースにあるのを確認しないと…何だか不安で。」",
+		   NULL, " devo accertarmi che ce l'abbiano ancora, altrimenti continuerò a rodermi l'anima dall'ansia...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その言葉から、連鎖的に思い出す。",
+		   NULL, "Questa conversazione mi porta alla mente un ricordo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんがバイトを始めた理由。",
+		   NULL, "Ovvero che Satoshi-kun aveva iniziato a lavorare per permettersi di comprare un enorme orso di peluche da regalare a Satoko.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは、沙都子がこの先にあるおもちゃ屋で売っている、巨大なぬいぐるみを欲しがったからだ。",
+		   NULL, "Ce l'ha in vendita il negozio di giocattoli che si trova proprio in fondo alla strada.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのぬいぐるみの値段が、結構高いものなのだとか。",
+		   NULL, "Se ben ricordo, quel peluche costava davvero tanto.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子の誕生日は、綿流しのお祭りのあと、すぐだと聞いている。",
+		   NULL, "Ho sentito che il compleanno di Satoko è subito dopo il Watanagashi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……何日かはよく知らないけれど。",
+		   NULL, "... non sono sicura del giorno, però.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そういえば、バイトは辞めたと言ってなかったっけ？",
+		   NULL, "Aspetta, ma non aveva detto che si era licenziato?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お世話になった人へのご挨拶とか、借りてたロッカーの整理とか、そんなところだろうか。",
+		   NULL, "Forse sta andando a salutare i suoi ex-colleghi e a portare via le cose che aveva nel suo armadietto?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どちらにせよ、悟史くんは目標額を貯め、もうじきバイト生活から完全に解放されるということだ。",
+		   NULL, "In ogni caso, tra poco raggiungerà il suo scopo e potrà dirsi davvero libero.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ショーケースにあるのを確認しないと不安で…、なんていう事は、どうやらお給料はまだもらえていないのだろう。",
+		   NULL, "Forse non ha ancora ricevuto la sua paga... e perciò vuole assicurarsi con i suoi occhi che l'orso di peluche sia ancora in vetrina.", Line_WaitForInput);
+	OutputLine(NULL, "この様子だと、沙都子の誕生日当日にもらえるのかもしれない。",
+		   NULL, " Forse lo pagheranno proprio il giorno del compleanno di Satoko.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask("background/mati_o1", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　おもちゃ屋が見えてくると、悟史くんは急に小走りになり、ショーウィンドゥの中を覗き込んだ。",
+		   NULL, "Non appena raggiungiamo il negozio di giocattoli, Satoshi-kun allunga il passo e si avvicina alla vetrina.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　売れていないと確認できたらしく、安堵している様子だった。",
+		   NULL, "Poi, tira un sospiro di sollievo vedendo che l'orso non è ancora stato venduto.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "Iru", 56, 0 );
+	ModDrawCharacter(2, 7, "sprite/sato1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200288", 256, TRUE);
+	OutputLine(NULL, "「よかったよかった。",
+		   NULL, "\"Grazie al cielo...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200289", 256, TRUE);
+	OutputLine(NULL, "…大丈夫。",
+		   NULL, " per fortuna", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200290", 256, TRUE);
+	OutputLine(NULL, "ちゃんとあるよ。」",
+		   NULL, " ce l'hanno ancora.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600846", 256, TRUE);
+	OutputLine(NULL, "「買えるだけのお金は稼げてるわけですよね？",
+		   NULL, "\"Hai già guadagnato soldi a sufficienza per comprarlo, no?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600847", 256, TRUE);
+	OutputLine(NULL, "　なら予約とかしちゃえばいいのに。」",
+		   NULL, " Perché non chiedi di fartelo mettere da parte?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200291", 256, TRUE);
+	OutputLine(NULL, "「…むぅ。」",
+		   NULL, "\"... uff.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　予約という概念すら欠落しているらしい。",
+		   NULL, "Non ci aveva pensato?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…やっぱり悟史くんの身近には世話焼きが必須だと実感する。",
+		   NULL, "... accidenti, ha proprio bisogno di qualcuno che lo tenga d'occhio.", Line_Normal);
+	ClearMessage();
+	DrawScene("black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの肩越しに私もショーケースを覗き込んだ。",
+		   NULL, "Do un'occhiata anch'io alla vetrina.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の尺度ではそんなに可愛いとは思えないが、確かにサイズだけは特大のぬいぐるみが、ケースの中に窮屈そうに閉じ込められていた。",
+		   NULL, "L'orso di peluche non è poi così carino, secondo me. Dietro i vetri di questo negozio di giocattoli sembra quasi messo di forza in un angolo per farcelo entrare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　売り物というよりは、展示品やレイアウトの一部といった雰囲気だった。",
+		   NULL, "Come dire, sembra più un modello esposto piuttosto che un oggetto in vendita.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(2, 7, "sprite/sato1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/mati_o1", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600848", 256, TRUE);
+	OutputLine(NULL, "「値札が付いてないけど、これ、本当に売り物なんですか？",
+		   NULL, "\"Non vedo il prezzo. Sei sicuro che sia in vendita?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600849", 256, TRUE);
+	OutputLine(NULL, "　これ、一体いくらするんです？」",
+		   NULL, " Quanto costa?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200292", 256, TRUE);
+	OutputLine(NULL, "「……ん、…うん。",
+		   NULL, "\"...ecco...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200293", 256, TRUE);
+	OutputLine(NULL, "売り物なのは確認したから間違いないよ。」",
+		   NULL, " sono sicuro che sia in vendita.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600850", 256, TRUE);
+	OutputLine(NULL, "「値段は？",
+		   NULL, "\"A che prezzo?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600851", 256, TRUE);
+	OutputLine(NULL, "　予算は大丈夫？」",
+		   NULL, " Ti bastano i soldi che hai?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200294", 256, TRUE);
+	OutputLine(NULL, "「大丈夫だよ、ちゃんと確認してあるよ…。」",
+		   NULL, "\"Va tutto bene, ho già controllato...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんはさすがに馬鹿にされたと思ったらしく、口を尖らせて頬を膨らませた。",
+		   NULL, "Satoshi-kun mette di nuovo il broncio, pensando che lo stia prendendo di nuovo in giro.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600852", 256, TRUE);
+	OutputLine(NULL, "「予算が大丈夫なら、問題ないじゃないですか。",
+		   NULL, "\"Se hai i soldi, allora va bene così.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600853", 256, TRUE);
+	OutputLine(NULL, "なら予約しちゃいましょう。",
+		   NULL, " Potresti prenotarlo adesso, no?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600854", 256, TRUE);
+	OutputLine(NULL, "その方が悟史くんも心の荷が下りていいでしょうしね。」",
+		   NULL, " Così non dovrai più preoccuparti di sapere se l'hanno venduto o meno.\"", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask("background/mati_o2", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私たちはちょっと埃っぽい店内に入り、お店の人の姿を探す。",
+		   NULL, "Entriamo nel negozio e chiamiamo un commesso.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200295", 256, TRUE);
+	OutputLine(NULL, "「………誰もいないのかな。」",
+		   NULL, "\"... c'è nessuno...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600855", 256, TRUE);
+	OutputLine(NULL, "「あははははー、そりゃ好都合です。",
+		   NULL, "\"Ahahahahah, perfetto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600856", 256, TRUE);
+	OutputLine(NULL, "悟史くん、お給料日を待たずにぬいぐるみが手に入るかもですね。」",
+		   NULL, " Così possiamo prenderlo senza nemmeno pagare.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200295_1", 256, TRUE);
+	OutputLine(NULL, "「だだ、駄目だよ魅音。",
+		   NULL, "\"N-non si fa, Mion.", Line_Continue);
+	Wait( 2000 );
+	OutputLine(NULL, "泥棒はいけないよ…。」",
+		   NULL, " Rubare è sbagliato...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600856_1", 256, TRUE);
+	OutputLine(NULL, "「…冗談ですって。",
+		   NULL, "\"... sto scherzando.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600856_2", 256, TRUE);
+	OutputLine(NULL, "軽く受け流して欲しかったんだけどなぁ。",
+		   NULL, " Speravo di farti fare due risate.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600856_3", 256, TRUE);
+	OutputLine(NULL, "…ひょっとして、私が盗人の真似を平気で出来る女だと思ってますー？」",
+		   NULL, " ... oppure credi davvero che potrei rubare qualcosa senza esitazione?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200295_2", 256, TRUE);
+	OutputLine(NULL, "「あ、…ごめん。あははは…。」",
+		   NULL, "\"Ah... cioè, scusa. Ahahahah...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんが取り繕ったように笑う。",
+		   NULL, "Satoshi-kun fa un sorriso imbarazzato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はそれにむくれ面を返してやる。",
+		   NULL, "In risposta, faccio finta di essermi offesa.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このやり取りが、…何だか無性に懐かしい。",
+		   NULL, "È passato davvero molto tempo dall'ultima volta.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日までに何だか色々と、嫌なことやつまらないこと、忘れたいことがたくさんあった気がする。",
+		   NULL, "In questo lasso di tempo, sono successe tante cose sgradevoli che preferirei dimenticare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だけど、そんなことは砂浜に書いた文字が、波に一度覆われただけで跡形もなく消えてしまうくらいに、すーっと消えてしまっていた。",
+		   NULL, "... ma adesso ho come la sensazione che sia tutto svanito nel nulla, come se fosse stato solo un brutto sogno.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　レジの奥に揺り椅子があり、お店の人らしい老人が昼寝をしているのを見つける。",
+		   NULL, "Dietro alla cassa trovo un signore anziano che sta schiacciando un pisolino. Dev'essere uno dei proprietari.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私たちは結構賑やかにしていたつもりなのに、起きないところを見ると相当深く眠っているようだった。",
+		   NULL, "Nonostante il nostro chiacchiericcio, questo signore è ancora perso nel mondo dei sogni.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600860", 256, TRUE);
+	OutputLine(NULL, "「あの、…すみません。",
+		   NULL, "\"Mi scusi...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600861", 256, TRUE);
+	OutputLine(NULL, "お店の方ですよね？」",
+		   NULL, " lei lavora qui...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　肩を突っ突いたりしてみるが、まるで目を覚ます気配がない。",
+		   NULL, "Gli do una leggera pacca sulla spalla, ma nemmeno questo pare sufficiente a svegliarlo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その時、ただいまーという声が聞こえて、エプロンをしたおばさんが入って来た。",
+		   NULL, "Un attimo dopo, dal retro fa la sua comparsa una signora di mezza età con indosso un grembiule.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>おばさん</color>", NULL, "<color=#f5e6d3>Signora</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15001", 256, TRUE);
+	OutputLine(NULL, "「おじいちゃん、店番頼んだのにすっかり居眠りしちゃってー！",
+		   NULL, "\"Nonno! Ti sei di nuovo addormentato in negozio!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15002", 256, TRUE);
+	OutputLine(NULL, "　お客さん来てるってのにもー！",
+		   NULL, " Abbiamo dei clienti!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15003", 256, TRUE);
+	OutputLine(NULL, "　もーごめんなさいねぇ！",
+		   NULL, " Vi chiedo scusa, ragazzi!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15004", 256, TRUE);
+	OutputLine(NULL, "　うちのおじいちゃんももうすっかりボケちゃって。」",
+		   NULL, " Ormai il nonno ha perso la testa.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　おばさんは、ちょっと乱暴な起こし方で老人を起こすと、居間に戻るように告げる。",
+		   NULL, "La signora prende l'anziano per una spalla e lo scuote fino a svegliarlo, per poi dirgli di tornarsene in soggiorno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それから苦笑いしながら、レジに回ってくれた。",
+		   NULL, "Poi, la donna tira un sospiro e raggiunge la cassa.", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/mati_o2", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>おばさん</color>", NULL, "<color=#f5e6d3>Signora</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15005", 256, TRUE);
+	OutputLine(NULL, "「お恥ずかしいところを見せちゃってごめんなさいねぇ。",
+		   NULL, "\"Che imbarazzo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15006", 256, TRUE);
+	OutputLine(NULL, "何かお買い上げ？」",
+		   NULL, " Come posso aiutarvi?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200299", 256, TRUE);
+	OutputLine(NULL, "「あ、買うんじゃなくて予約なんですけど、いいですか？",
+		   NULL, "\"Uhm, vorrei fare una prenotazione.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200300", 256, TRUE);
+	OutputLine(NULL, "　あのショーケースの中の一番大きいぬいぐるみなんですけど。」",
+		   NULL, " Vorrei far mettere da parte quel grosso orso di peluche che è in vetrina.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>おばさん</color>", NULL, "<color=#f5e6d3>Signora</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15007", 256, TRUE);
+	OutputLine(NULL, "「あれ？",
+		   NULL, "\"Ah, quello.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15008", 256, TRUE);
+	OutputLine(NULL, "　いいの？",
+		   NULL, " Sei sicuro?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps2/00/omoa15009", 540, TRUE);
+	OutputLine(NULL, "　値札見た？",
+		   NULL, " Hai visto il prezzo?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/omoa15010", 256, TRUE);
+	OutputLine(NULL, "　かなり高いけど、お小遣い大丈夫なの？」",
+		   NULL, " È un oggetto molto costoso.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200301", 256, TRUE);
+	OutputLine(NULL, "「あ、……はい。",
+		   NULL, "\"Ah... sì, lo so.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200302", 256, TRUE);
+	OutputLine(NULL, "ぎりぎり足りるはずです。」",
+		   NULL, " Ma ho risparmiato abbastanza.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600861_1", 256, TRUE);
+	OutputLine(NULL, "「もうすぐバイトのお給料が入るそうなので、それまで予約したいんですけど…。」",
+		   NULL, "\"Tra poco gli arriverà lo stipendio, quindi vorrebbe prenotarlo almeno fino a quel giorno.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　店の人はやや面倒くさそうではあったけど、悟史くんの名前をメモに書き取ると、予約を引き受けてくれた。",
+		   NULL, "La donna, in un primo momento, sembra esitare, ma poco dopo prende un foglio e vi scrive sopra il nome di Satoshi-kun, accogliendo la prenotazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは、予約券の代りに、予約したことを示すメモをもらう。",
+		   NULL, "Satoshi-kun, invece, riceve un piccolo pezzo di carta a mo' di promemoria.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600862", 256, TRUE);
+	OutputLine(NULL, "「ね？",
+		   NULL, "\"Visto?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600863", 256, TRUE);
+	OutputLine(NULL, "　これでもう誰かに先に買われちゃう心配はもう必要ありません。」",
+		   NULL, " Adesso non hai più motivo di preoccuparti per quell'orso di peluche.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200304", 256, TRUE);
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Già...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200305", 256, TRUE);
+	OutputLine(NULL, "…お給料がもらえるのはもうすぐなんだけどね、",
+		   NULL, " tra poco mi pagheranno...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 3550 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…これで安心できる。」",
+		   NULL, " mi sento sollevato.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この様子じゃ、悟史くんは連日のようにショーケースを覗いていたに違いない。",
+		   NULL, "Se non l'avessimo fatto, scommetto che sarebbe venuto a controllare il negozio ogni giorno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　で、今日はあるか、明日はあるかと無駄に心配を重ねてたわけだ。",
+		   NULL, "E avrebbe continuato a darsi pena per nulla.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その心的負担から解放されたのか、悟史くんは本当にほっとした笑顔で、予約券を取れた喜びを噛みしめているようだった。",
+		   NULL, "Liberato da questo peso, Satoshi-kun sorride con l'aria di chi è praticamente rinato, con il suo biglietto di prenotazione tra le dita.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
+	ModDrawCharacter(2, 7, "sprite/sato1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/mati_o1", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200306", 256, TRUE);
+	OutputLine(NULL, "「これなら、もっと早くに予約をしてれば良かったなぁ。」",
+		   NULL, "\"Avrei dovuto farlo prima.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600864", 256, TRUE);
+	OutputLine(NULL, "「……普通の人は欲しいと思ったら即予約します。",
+		   NULL, "\"... la gente normale lo fa spesso quando vuole comprare qualcosa.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600865", 256, TRUE);
+	OutputLine(NULL, "そういう思考に至らない悟史くんはちょいと希少です。」",
+		   NULL, " Sei tu quello strano che non ci ha pensato, Satoshi-kun.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200307", 256, TRUE);
+	OutputLine(NULL, "「む、…むぅ。」",
+		   NULL, "\"U-uffa...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんをいじめることの楽しさを思い出す。",
+		   NULL, "È così divertente prenderlo in giro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……本当に、昨日までの暗くて辛くて寂しい日々が嘘のようだった。",
+		   NULL, "... è incredibile che fino a pochi giorni fa stesse attraversando le pene dell'inferno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんも、昨日までの日々を嘘にするつもりに見えた。",
+		   NULL, "Satoshi-kun pare essersi come dimenticato tutto ciò che è successo fino a ieri.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 7, "portrait/sato1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200308", 256, TRUE);
+	OutputLine(NULL, "「でも、…ありがと。」",
+		   NULL, "\"Però... ti ringrazio.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんはそう言いながら、私の頭に手を伸ばす。",
+		   NULL, "Satoshi-kun tende una mano e l'avvicina alla mia testa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私の頭を撫でようとしてくれてるんだと気付くと、顔が紅潮するのが自分でわかった。",
+		   NULL, "... sta per accarezzarmi di nuovo? Sento che sto per arrossire...", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask("black", "maskdown", 1, 0, 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの手が、私の頭にまだ触れてないのに。",
+		   NULL, "Anche se ancora non mi ha sfiorata,", Line_WaitForInput);
+	OutputLine(NULL, "…私の頭のてっぺんは、悟史くんが気安く撫でてくれた日々を思い出し、くすぐったいような感じでいっぱいになってしまう。",
+		   NULL, " mi torna subito alla mente quella sensazione di gioia di quando, la prima volta, mi ha accarezzato la testa senza pensarci due volte.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………昨日、物騒な殺人事件があったことだって、もう今の私には何の興味もないことだった。",
+		   NULL, "... non m'importa se sia un assassino o se abbia compiuto chissà quale misfatto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんたちに辛くあたっていた不幸の元凶が死んだのなら、それでいい。",
+		   NULL, "Finché Satoshi-kun potrà recuperare al sua libertà, allora ogni altra cosa sarà superflua.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日から悟史くんにとっても、私にとっても幸せな日々が取り戻されていくなら、それで十分だった。",
+		   NULL, "Sapere che tornerà alla sua vita quotidiana senza vivere nel terrore è sufficiente a farmi sentire il cuore leggero.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だが、いくら待っても、悟史くんの手は私の頭を撫でてくれなかった。",
+		   NULL, "...... tuttavia, la mano di Satoshi-kun non mi raggiunge.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　固く閉じていたまぶたをそぅっと開く。",
+		   NULL, "Apro gli occhi lentamente...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	FadeOutBGM( 1, 300, FALSE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、…私は状況がまったく一変してしまっていることを知った。",
+		   NULL, "Per scoprire che la situazione è cambiata all'improvviso.", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 400 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
+	DrawScene("background/mati_o1", 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　背広姿の男たちが４人。",
+		   NULL, "Ci sono quattro uomini in divisa che ci bloccano la strada.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、私たちがおもちゃ屋から出てくるのを待ち構えていたかのようだった。",
+		   NULL, "Probabilmente ci stavano aspettando all'uscita del negozio.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 11, "sprite/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700106", 256, TRUE);
+	OutputLine(NULL, "「どうもどうも。",
+		   NULL, "\"Salve, salve.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700107", 256, TRUE);
+	OutputLine(NULL, "んっふっふっふっふ…。」",
+		   NULL, " Nfufufufu...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　嫌らしい笑いをしながら、一番年配の男が歩み出た。",
+		   NULL, "Il più anziano dei quattro fa un passo avanti con un sorrisetto insopportabile.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　初対面の男だったが、雰囲気から察するに魅音と悟史くんの両方に面識があるようだった。",
+		   NULL, "Non l'ho mai visto prima d'ora, ma ha l'aria di conoscere sia Mion che Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察の刑事か何かに見える。",
+		   NULL, "Dev'essere un poliziotto.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お姉から最近受けた情報を高速で検索した。",
+		   NULL, "Passo in rassegna le informazioni in mio possesso...", Line_WaitForInput);
+	OutputLine(NULL, "…該当する情報はすぐに見つけられる。",
+		   NULL, " e trovo in fretta una corrispondenza.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700108", 256, TRUE);
+	OutputLine(NULL, "「こんにちは。",
+		   NULL, "\"È un piacere rivedervi,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700109", 256, TRUE);
+	OutputLine(NULL, "北条さん、園崎さん。",
+		   NULL, " Houjou-san, Sonozaki-san.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700110", 256, TRUE);
+	OutputLine(NULL, "いい雰囲気だったところを邪魔しちゃって、実に申し訳ないです。」",
+		   NULL, " Scusate se mi sono intromesso in questo vostro momento intimo.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("black", "maskdown", 1, 0, 1300 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	ModPlayBGM( 1, "msys07", 56, 0, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石蔵人。",
+		   NULL, "Kuraudo Ooishi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……興宮署の刑事で、一連の事件を捜査している人物。",
+		   NULL, "... il detective che sta indagando sulla serie di morti misteriose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　連続怪死事件の裏に園崎家の暗躍を嗅ぎ取っているらしい。",
+		   NULL, "Ritiene che dietro a questo caso ci sia la famiglia Sonozaki.", Line_WaitForInput);
+	OutputLine(NULL, "園崎家ともっとも敵対する人物だ。",
+		   NULL, " In altre parole, è un mio nemico.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　捜査４課との縁も深く、この辺りの地回りに特に精通する。",
+		   NULL, "Ha conoscenti in tutte le divisioni delle forze di polizia e adora ficcare il naso tra i commercianti di questa zona.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…連続怪死事件の云々がなくても、ヤクザ稼業に手を染める園崎家には充分、敵に値する存在だ。",
+		   NULL, "... sta col fiato sul collo alla famiglia Sonozaki al pari delle organizzazioni criminali, in parallelo con i sospetti che ha in merito alle morti che avvengono ogni anno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろん、次期頭首である魅音に好意的な存在でないことも間違いない。",
+		   NULL, "Naturalmente, in quanto erede della famiglia, non è affatto benvisto da Mion Sonozaki.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はお姉ならこう返すに違いないと、その反応をシミュレーションしていく。",
+		   NULL, "Cerco di replicare come reagirebbe mia sorella in questa situazione.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/mati_o1", 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600866", 256, TRUE);
+	OutputLine(NULL, "「…ありゃあ、大石さんですか。",
+		   NULL, "\"... cielo, Ooishi-san.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600867", 256, TRUE);
+	OutputLine(NULL, "お仕事ご苦労さまです。",
+		   NULL, " Grazie per il suo costante contributo alla società.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600868", 256, TRUE);
+	OutputLine(NULL, "大の大人が、４人も揃っておもちゃ屋さんに何かご用で？",
+		   NULL, " Che ci fanno quattro omaccioni come voi davanti a un negozio di giocattoli?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600869", 256, TRUE);
+	OutputLine(NULL, "　まさかお人形さん買いに来たってわけでもあるまいに？",
+		   NULL, " State cercando qualche bambola, forse?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600870", 256, TRUE);
+	OutputLine(NULL, "　ぷぷぷ…。」",
+		   NULL, " Pfft...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　言うまでもなく、用事があるのはおもちゃ屋にではなく、",
+		   NULL, "So bene che cosa vogliono,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "私たちにだ。",
+		   NULL, " e non è certo un giocattolo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私、ではあるまい。",
+		   NULL, "Non sono io...", Line_WaitForInput);
+	OutputLine(NULL, "……恐らくは悟史くんだ。",
+		   NULL, " ma Satoshi-kun.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの様子を窺うと、……過剰な反応は示さないまでにも、落ち着きをなくしていることが見て取れた。",
+		   NULL, "Do un'occhiata al suo profilo... che subito si fa più teso e irrequieto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　他の刑事たちも、やんわりと包囲して、私たちが逃げ出すことを予見しているかのようだ。",
+		   NULL, "Gli altri tre agenti si spostano ai nostri lati per evitare di farci scappare.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700111", 256, TRUE);
+	OutputLine(NULL, "「北条さん。",
+		   NULL, "\"Houjou-san.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700112", 256, TRUE);
+	OutputLine(NULL, "実はですね、ちょいと伺いたいお話がありまして。」",
+		   NULL, " Vorrei fare quattro chiacchiere con te.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600871", 256, TRUE);
+	OutputLine(NULL, "「何それ？",
+		   NULL, "\"Come?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600872", 256, TRUE);
+	OutputLine(NULL, "　任意同行ってやつ？",
+		   NULL, " Volete portarlo alla stazione di polizia?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600873", 256, TRUE);
+	OutputLine(NULL, "　悟史くん、こんなのに付き合う必要ないよ、行こ！」",
+		   NULL, " Non devi andare con loro per foza, Satoshi-kun. Andiamocene!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの肩をドンと小突く。",
+		   NULL, "Gli do una spintarella sulla spalla.", Line_WaitForInput);
+	OutputLine(NULL, "だが悟史くんは顔面を蒼白にし、心ここにあらずという感じだった。",
+		   NULL, " Ma Satoshi-kun rimane fermo lì in piedi, pietrificato.", Line_Normal);
+	ClearMessage();
+
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
+	ModFadeOutBGM( 0, 400, FALSE, 1 );
+	DrawScene("black", 400 );
+	PlayBGM( 0, "semi_r", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　心ここにあらず？",
+		   NULL, "Pietrificato?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは諦観、…いや、観念したかのように見えた。",
+		   NULL, "No, è meglio dire \"rassegnato\"...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……その時。",
+		   NULL, "...... in quel momento,", Line_WaitForInput);
+	OutputLine(NULL, "私はお姉の不手際を呪った。",
+		   NULL, " ricordo l'errore di mia sorella.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　叔母殺しなんて、現場を見なくたって犯人は悟史くんだってわかるじゃないか。",
+		   NULL, "Date le sue circostanze, è ovvio che sia stato lui a uccidere sua zia! Non serve nemmeno analizzare la scena del crimine!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その悟史くんを庇うようにアリバイを作らなくてどうするのか…！",
+		   NULL, "Come ha potuto Mion dimenticare di fornirgli un alibi...?!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　馬鹿魅音は警察にすでに、当日のことをありのまま話してる。",
+		   NULL, "Quella stupida deve aver spifferato tutto alla polizia senza inventarsi nemmeno una bugia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、悟史くんにアリバイがないってことまで馬鹿正直に！",
+		   NULL, "Scommetto che non gli ha nemmeno detto di aver visto Satoshi-kun al festival...!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お姉が動かない以上、村人はみんな正直に話す。",
+		   NULL, "Se non è lei a mettere in moto le cose, allora gli abitanti non lo copriranno mai di loro iniziativa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それらを全部合わせれば、悟史くん一人にいつまでたってもアリバイができないのは明白になるだろう。",
+		   NULL, "Ormai è solo una questione di tempo prima che la polizia scopra che Satoshi-kun non ha un alibi per quella notte.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして警察は丹念に外堀を埋め、…任意同行から一気に畳みかけて悟史くんの自白を引き出そうとするに違いない。",
+		   NULL, "Ecco perché sono venuti fin qui: per cercare di metterlo sotto pressione e costringerlo a confessare.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(1, 7, "sprite/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene("background/mati_o1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…悟史くんの表情をもう一度見る。",
+		   NULL, "... guardo di nuovo Satoshi-kun in volto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その表情には、ひとかけらの覇気も見いだすことができなかった。",
+		   NULL, "Ha un'espressione fuori di sé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは、任意同行が断れるものだということも知らないだろう。",
+		   NULL, "Immagino che non sappia nemmeno che può rifiutarsi di partecipare a un interrogatorio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　のこのこと取調室まで連れて行かれ、この老獪な大石に、ちょっとカマをかけられただけであっさり観念して自供するに違いない。",
+		   NULL, "Se verrà portato alla stazione di polizia e messo alle strette da Ooishi, sono sicura che confesserà in due minuti.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……悟史くんはやっぱり誰かが庇ってあげないとだめなのだ。",
+		   NULL, "... come immaginavo, qualcuno deve proteggerlo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、誰も守らなかった。",
+		   NULL, "Nessuno c'è mai stato per lui quando aveva bisogno...", Line_WaitForInput);
+	OutputLine(NULL, "…なら私が守ってあげなければ…。",
+		   NULL, " ma adesso le cose sono cambiate: ci sono io.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModFadeOutBGM( 0, 500, FALSE, 0 );
+	Negative( 1000 , TRUE );
+	PlayBGM( 1, "kaze", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だけど、どうやって？！",
+		   NULL, "Ma come posso fare?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音がこれまで証言したことは勘違いでしたと、今さらひっくり返して見せるか？",
+		   NULL, "È possibile cambiare la versione di Mion e dire che ha preso un abbaglio?", Line_WaitForInput);
+	OutputLine(NULL, "　そんなのはまったくの無駄で手遅れだ。",
+		   NULL, " No, non funzionerà mai.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　考える時間がもう少し潤沢にあるならば、私の狡猾な脳はきっとうまい言い逃れを見つけ出してくれるに違いなかった。",
+		   NULL, "Se solo avessi più tempo per analizzare la situazione, potrei mettere in moto il cervello e tirare fuori dal cilindro una qualche splendida spiegazione.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、そんな悠長な時間は今はない。",
+		   NULL, " Peccato che non sia così.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　刑事たちはじりじりと間合いを詰め、明らかに見て取れる圧力を演出していた。",
+		   NULL, "I poliziotti si avvicinano poco alla volta, cercando di intimidirlo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が距離感としてしか感じないものを、悟史くんはもっともっと心理的に感じているに違いない。",
+		   NULL, "Satoshi-kun percepisce la distanza che si assottiglia, palesando che ha già iniziato a vacillare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が起死回生の何かを思案して押し黙っている間に、緊張に耐えきれなくなった悟史くんが、屈伏してしまうことだってある。",
+		   NULL, "Rischio che decida di confessare qui e ora mentre io sto ancora pensando a una scusa per venirne fuori!", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 1000, FALSE );
+	DrawScene("black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　考えるより先に、何か何か何か。",
+		   NULL, "Mi serve un'idea! Un'idea!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここで黙っては駄目だ駄目だ。",
+		   NULL, " Non posso rimanere zitta!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この沈黙が、悟史くんを追い詰めてしまうまえに。",
+		   NULL, "Altrimenti Satoshi-kun confesserà!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私という存在が、この王手を何とか凌がなければ…！！",
+		   NULL, "Sono io l'unica che può riuscire a salvarlo...!!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石の巨体が悟史くんを圧迫するように迫る。",
+		   NULL, "Ooishi, con il suo fisico corpulento, si avvicina a Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それに気圧されて悟史くんがよろりと、後ろへ後退る。",
+		   NULL, "Quest'ultimo fa un passo indietro, percependo la sua ostilità.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 7, "sprite/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawScene("background/mati_o1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200309", 256, TRUE);
+	OutputLine(NULL, "「…………あ、…………………ぅ。」",
+		   NULL, "\"...... ah............ uwahh...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700113", 256, TRUE);
+	OutputLine(NULL, "「大して時間は取らせませんから。",
+		   NULL, "\"Non ti ruberò molto tempo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700114", 256, TRUE);
+	OutputLine(NULL, "そんな怖がらないください。",
+		   NULL, " Avanti, non avere paura...", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700115", 256, TRUE);
+	OutputLine(NULL, "…んっふっふっふっふ！」",
+		   NULL, "nfufufufu!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何が大して時間は取らせないだ…。",
+		   NULL, "Non gli ruberà molto tempo?!", Line_WaitForInput);
+	OutputLine(NULL, "今こいつ、ハッキリ言ッタゾ！",
+		   NULL, " Solo uno stupido non capirebbe cosa significa!", Line_WaitForInput);
+	OutputLine(NULL, "　ここでひっ捕まえたら二度とシャバには戻らせないってハッキリ言ッタ！！",
+		   NULL, " Significa che non riuscirà più a venirne fuori se si lascerà convincere a seguirli!!", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くん、絶対に屈しちゃいけない、君がここで屈したら、何のために今日まで耐えて来たのかわからなくなっちゃうんだよ！！",
+		   NULL, " Non cedere, Satoshi-kun! Se ti arrendi ora, tutti i tuoi sforzi saranno stati vani!!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200310", 256, TRUE);
+	OutputLine(NULL, "「………ぅ。」",
+		   NULL, "\"......... ngh...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの呻きが、緊張の糸が切れかかっているサインであることは、私以上に大石の方が嗅ぎ取っているに違いないのだ…。",
+		   NULL, "La voce striminzita di Satoshi-kun tradisce la sua inquietudine, dettaglio che Ooishi non ha intenzione di ignorare.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石はにやぁっと笑い、……悟史くんの肩に手をかけようと、その腕を伸ばす……。",
+		   NULL, "Ooishi ridacchia soddisfatto... e allunga una mano diretta verso la spalla di Satoshi-kun...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
+	FadeOutBGM( 1, 300, FALSE );
+	PlaySE( 4, "s_daidageki", 56, 64 );
+	Negative( 300 , TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はそれを見た瞬間に、脊髄に雷が駆け抜けるのを感じた。",
+		   NULL, "A questa scena, sento come se il mio corpo fosse stato attraversato da una scarica elettrica.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	PlayBGM( 1, "suzu", 56, 0 );
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの手に触れられては駄目だ。",
+		   NULL, "Quella mano non deve raggiungere Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの無骨で無慈悲な手が悟史くんの肩を包んだ時、その感触は悟史くんの心を打ち負かしてしまう…！",
+		   NULL, "Un solo tocco di quella mano scellerata e Satoshi-kun crollerà in mille pezzi...!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは力なく頷き、任意同行に従うどころか、全てを認めて白状してしまう…！！",
+		   NULL, "Farà un cenno impercettibile della testa e li seguirà al commissariato, pronto a confessare tutto quanto...!!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeFilm( 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600874", 256, TRUE);
+	OutputLine(NULL, "「悟史くんに、アリバイがあるか知りたいわけですよね？」",
+		   NULL, "\"Voleva sapere il suo alibi?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700116", 256, TRUE);
+	OutputLine(NULL, "「………うん？」",
+		   NULL, "\"...... uhm?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石が怪訝な声をあげ、私に振り返る。",
+		   NULL, "Ooishi si volta verso di me...", Line_WaitForInput);
+	OutputLine(NULL, "…悟史くんに伸ばした手は止まった。",
+		   NULL, " fermando la mano a mezz'aria.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私は特に用意があって言ったわけじゃない。",
+		   NULL, "... non sono pronta a questo evento.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石の手が止められれば何でもよかっただけだ。",
+		   NULL, "Ho solo cercato di fermare Ooishi il prima possibile.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だから時間稼ぎ以上の意味など何もない。",
+		   NULL, "... adesso devo guadagnare tempo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本当に本当に、口からの出任せもいいところだった。",
+		   NULL, "Poco importa ciò che dirò.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700117", 256, TRUE);
+	OutputLine(NULL, "「…そうですよ。",
+		   NULL, "\"... esatto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700118", 256, TRUE);
+	OutputLine(NULL, "北条悟史さんのアリバイが知りたいんです。",
+		   NULL, " Voglio conoscere l'alibi di Houjou-san.", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700119", 256, TRUE);
+	OutputLine(NULL, "なっはっは、…私たちの捜査がマズイからなのかなぁ、犯行の時間帯にどうしても北条さんのアリバイが見つけられないんですよ。",
+		   NULL, "Nahahah... dev'esserci una falla nelle nostre indagini... non riusciamo a trovare nemmeno un accenno a cosa stesse facendo all'ora del delitto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700120", 256, TRUE);
+	OutputLine(NULL, "仕方ないから、恥を忍んでご本人に直接その辺りをお伺いしようかと思いましてねぇ。」",
+		   NULL, " Me ne vergogno, lo ammetto, ma abbiamo deciso di venire a chiederglielo di persona.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600875", 256, TRUE);
+	OutputLine(NULL, "「そんなの本人に聞く必要ないです。",
+		   NULL, "\"Non c'è bisogno che lo domandiate a lui.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600876", 256, TRUE);
+	OutputLine(NULL, "私がアリバイ、証明しますから。」",
+		   NULL, " Posso confermare io il suo alibi.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700121", 256, TRUE);
+	OutputLine(NULL, "「ありゃ。",
+		   NULL, "\"Accidenti.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700122", 256, TRUE);
+	OutputLine(NULL, "そりゃ本当？",
+		   NULL, " Davvero?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700123", 256, TRUE);
+	OutputLine(NULL, "　なら助かるなぁ。",
+		   NULL, " Ci sarebbe di grande aiuto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700124", 256, TRUE);
+	OutputLine(NULL, "あの晩、園崎さんが神社にいて、お祭の最後まで過ごしていたことは、すでにあなたからも聞いているし、その他大勢の方からも証言を得ています。",
+		   NULL, " Sonozaki-san, mi hai già detto che ti trovavi al festival a quell'ora, e in molti possono confermarlo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700125", 256, TRUE);
+	OutputLine(NULL, "そのあなたが、そこで北条さんとも一緒だったと言ってくれるなら、一番楽なんですがねぇ。",
+		   NULL, " Sarebbe più facile se potessimo dimostrare che Houjou-san era in tua compagnia...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700126", 256, TRUE);
+	OutputLine(NULL, "……でもあんた、以前その辺りお聞きした時、北条さんのことは一言も言ってませんよねぇ？",
+		   NULL, "Ma non mi sembra che tu abbia fatto il suo nome l'ultima volta, giusto?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700127", 256, TRUE);
+	OutputLine(NULL, "　実は居ましてって今頃おっしゃるおつもりで？",
+		   NULL, " Hai intenzione di cambiare la tua versione proprio adesso?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700128", 256, TRUE);
+	OutputLine(NULL, "　祭会場の誰一人、北条さんを見ていないのに、あなただけは見ていたと、そうおっしゃるおつもりで？」",
+		   NULL, "Nonostante nessuno abbia visto Houjou-san al festival, vuoi dirmi che in verità era insieme a te?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600877", 256, TRUE);
+	OutputLine(NULL, "「そうです。",
+		   NULL, "\"Proprio così.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600878", 256, TRUE);
+	OutputLine(NULL, "私と一緒にいました。それで充分です。」",
+		   NULL, " Era con me. Non vi basta?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700129", 256, TRUE);
+	OutputLine(NULL, "「…あなたが仲良しのお友達と終始一緒にいたのはわかっているし、私も会場で実際にお見かけしています。",
+		   NULL, "\"... so che eri insieme ad altri tuoi amici quella sera. Vi ho visti anch'io con i miei occhi.", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_5_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700130", 256, TRUE);
+	OutputLine(NULL, "それでも一緒に居たとおっしゃるわけで？",
+		   NULL, "Davvero era insieme a te?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700131", 256, TRUE);
+	OutputLine(NULL, "　なっはっはっは……。",
+		   NULL, " Nahahahah...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700132", 256, TRUE);
+	OutputLine(NULL, "そいつぁ、ちょっと苦しくない？",
+		   NULL, " non ti sembra poco credibile?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700133", 256, TRUE);
+	OutputLine(NULL, "　ん？」",
+		   NULL, " Allora?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石は、意地悪な笑みを浮かべながら私に食い寄る。",
+		   NULL, "Ooishi mi si avvicina con un ghigno inquientante.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　苦し紛れの言い訳をする私を追い詰めて遊んでいる……わけではなかった。",
+		   NULL, "Mi sta prendendo in giro perché la mia scusa non regge...? Strano, da parte sua.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もう少しで釣れそうな魚釣りを、横から邪魔されたのがとにかく不快でしょうがない、といった悪意が剥き出しだった。",
+		   NULL, "Secondo me si sente soltanto frustrato perché l'ho interrotto sul più bello, proprio quando stava per acchiappare il pesce grosso.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700133_1", 256, TRUE);
+	OutputLine(NULL, "「祭会場でずっと一緒に遊んでたのに、すっかり忘れてて、今頃になって思い出したと、そうおっしゃるおつもり？",
+		   NULL, "\"In altre parole, ieri avevi dimenticato che eri insieme a lui, ma oggi ti sei ricordata che eravate insieme?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700133_2", 256, TRUE);
+	OutputLine(NULL, "　園崎魅音さん。」",
+		   NULL, " Mion Sonozaki-san.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　心の中で、…まずいなと一瞬思ったが、もう自分でも止めようがなかった。",
+		   NULL, "Nel profondo del cuore... ho paura per ciò che sto per fare, ma non riesco a fermarmi.", Line_Normal);
+	ClearMessage();
+
+	DrawScene("text/nort27", 1000 );
+	Wait( 10000 );
+	FadeOutBGM( 1, 1000, FALSE );
+	DrawScene("scene/009a", 1000 );
+	ModPlayBGM( 0, "msys30", 56, 0, 0 );
+	ModPlayBGM( 0, "hgrs01", 56, 0, 1 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600881", 256, TRUE);
+	OutputLine(NULL, "「っていうか、私、魅音じゃないですし。",
+		   NULL, "\"Io non sono Mion.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600882", 256, TRUE);
+	OutputLine(NULL, "だから元々、綿流しになんか行ってません。」",
+		   NULL, " Non sono andata al festival del Watanagashi fin dal principio.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700134", 256, TRUE);
+	OutputLine(NULL, "「……は？」",
+		   NULL, "\"... che?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600883", 256, TRUE);
+	OutputLine(NULL, "「悟史くんとは綿流しの晩は、興宮のファミレスでずっとお喋りしてました。",
+		   NULL, "\"Satoshi-kun e io eravamo a fare due chiacchiere in un ristorante di Okinomiya.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600884", 256, TRUE);
+	OutputLine(NULL, "エンジェルモートって店ですので、どうぞ店長にも確認を取ってください。」",
+		   NULL, " Il posto si chiama 'Angel Mort'. Potete chiedere al proprietario se volete la conferma.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石はにやにやと笑いを浮かべたままだったが、混乱しているのは間違いなかった。",
+		   NULL, "Ooishi ha ancora quel sorrisetto sulla faccia, ma ha l'aria palesemente confusa.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700135", 256, TRUE);
+	OutputLine(NULL, "「…あんた、何を言ってるの？",
+		   NULL, "\"... cosa stai dicendo?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700136", 256, TRUE);
+	OutputLine(NULL, "　あんた、魅音じゃないなら、誰なわけ？」",
+		   NULL, " Se non sei Mion, allora chi sei?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600885", 256, TRUE);
+	OutputLine(NULL, "「園崎、…詩音です。",
+		   NULL, "\"Mi chiamo... Shion Sonozaki.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600886", 256, TRUE);
+	OutputLine(NULL, "魅音の双子の妹です。",
+		   NULL, " Sono la sorella gemella di Mion.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600887", 256, TRUE);
+	OutputLine(NULL, "初めてお会いしますね、こんにちは。」",
+		   NULL, " Piacere di conoscerla, Ooishi-san.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石は、私が苦し紛れに何を言っているやら…という顔をしていた。",
+		   NULL, "Ooishi ha un momento di sconcerto, come se non riuscisse a credere alle sue orecchie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、私があまりにも堂々ととんでもない話をするので、苦笑いは再び不快そうな顔に戻った。",
+		   NULL, "Tuttavia, il fatto che gli abbia dato questa risposta con tale naturalezza gli fa persino dubitare che possa aver mentito.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700137", 256, TRUE);
+	OutputLine(NULL, "「園崎魅音さんに双子の妹が居たなんて、初めて知りましたよ？",
+		   NULL, "\"Non sapevo che Mion Sonozaki-san avesse una gemella...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700138", 256, TRUE);
+	OutputLine(NULL, "　…あんた、大人をからかってんの？」",
+		   NULL, " mi stai prendendo in giro?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600888", 256, TRUE);
+	OutputLine(NULL, "「からかってなんかないですよ。",
+		   NULL, "\"Certo che no.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600889", 256, TRUE);
+	OutputLine(NULL, "どうぞ戸籍でも何でも調べてみてください。",
+		   NULL, " Perché non va a controllare i registri della mia famiglia?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600890", 256, TRUE);
+	OutputLine(NULL, "それとも、お姉を呼んで二人で並んで見せれば信じます？」",
+		   NULL, " Oppure, preferisce che faccia una chiamata direttamente a mia sorella?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここまで言われては、刑事たちもさすがに動揺を隠せないようだった。",
+		   NULL, "Tutti quanti i poliziotti sgranano gli occhi.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700139", 256, TRUE);
+	OutputLine(NULL, "「……園崎、しおんさん？」",
+		   NULL, "\"...... Shion... Sonozaki-san?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600891", 256, TRUE);
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Già.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600892", 256, TRUE);
+	OutputLine(NULL, "詩音ですが、何か？」",
+		   NULL, " Qualcosa che non va?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700140", 256, TRUE);
+	OutputLine(NULL, "「…あんたにもちょっと来てもらってもいいですかね。",
+		   NULL, "\"... credo che dovresti venire anche tu alla stazione di polizia.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700141", 256, TRUE);
+	OutputLine(NULL, "あんたが園崎詩音さんで、北条さんと一緒におられたって言うんなら、…あんたにも話を聞かせてもらいたいもんです。」",
+		   NULL, " Se vuoi testimoniare dicendo che ti trovavi insieme a Houjou-san... allora dovremo fare qualche domanda anche a te.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600893", 256, TRUE);
+	OutputLine(NULL, "「えぇ望むところです。",
+		   NULL, "\"Certamente.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600894", 256, TRUE);
+	OutputLine(NULL, "お手柔らかによろしくお願いいたします。」",
+		   NULL, " Vi prego solo di avere pazienza con noi.\"", Line_Normal);
+	ClearMessage();
+
+	ModFadeOutBGM( 0, 1800, FALSE, 0 );
+	DrawScene("black", 1000 );
+	DrawScene("background/sora", 400 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "Mati", 24, 0, 1 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　刑事たちは車のところで集まり、何か言い合いをしているようだった。",
+		   NULL, "I poliziotti si radunano vicino alla loro volante e cominciano a parlare fra loro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…詩音などというジョーカーが突然現れることは、まったく予想していなかったに違いない。",
+		   NULL, "... a quanto pare, la storia dell'esistenza di Shion era un'eventualità che non avevano previsto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、これで悟史くんのアリバイを少し誤魔化すこともできるだろう。",
+		   NULL, "Spero di riuscire così a creare un alibi per Satoshi-kun, almeno per qualche ora.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お姉の馬鹿には釘を刺しておいたから、詩音と一緒だったアリバイを後付けで作ることは出来ないことじゃない。",
+		   NULL, "Non dovrebbe essere difficile inventarsi qualcosa insieme a mia sorella per creargli un alibi da entrambe le parti.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(1, 7, "sprite/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask("background/mati_o1", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600895", 256, TRUE);
+	OutputLine(NULL, "「悟史くん。",
+		   NULL, "\"Satoshi-kun.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600896", 256, TRUE);
+	OutputLine(NULL, "何を聞かれてもエンジェルモートで私とお喋りをして過ごしていたと言い張ってください。",
+		   NULL, " Di' loro che eri insieme a me all'Angel Mort quella sera. Non dire altro, intesi?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600897", 256, TRUE);
+	OutputLine(NULL, "私が何とかしますから。",
+		   NULL, " Penserò io a confermare il tuo alibi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600898", 256, TRUE);
+	OutputLine(NULL, "何を聞かれても、よく覚えていないとか、うぅん、悟史くんなら下手なことは言わず、黙り込んだ方が無難かもです。」",
+		   NULL, "Se insistono, rispondigli che non ti ricordi molto bene com'è andata... anzi, non sforzarti troppo e limitati a rimanere in silenzio.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200311", 256, TRUE);
+	OutputLine(NULL, "「………………………。」",
+		   NULL, "\".....................\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんはぽかんと口を開けていた。",
+		   NULL, "Satoshi-kun ha sul volto un'espressione spaesata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私が大事な話をしているのに、右の耳から左の耳へ通り抜けちゃっているようだった。",
+		   NULL, "... sebbene gli stia dicendo delle cose importanti, pare quasi che non mi stia ascoltando.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600899", 256, TRUE);
+	OutputLine(NULL, "「悟史くん、聞いてます？",
+		   NULL, "\"Mi senti, Satoshi-kun?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600900", 256, TRUE);
+	OutputLine(NULL, "　ここでしっかりしないと刑事たちの思うつぼです。」",
+		   NULL, " Rimani lucido e non fare errori all'interrogatorio.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200312", 256, TRUE);
+	OutputLine(NULL, "「あ、……う、………うん。」",
+		   NULL, "\"Ah...... s-sì.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは、…きっと騙されたような気持ちになってるんだろうなと思った。",
+		   NULL, "Immagino che Satoshi-kun si stia sentendo tradito.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　無理もない…。",
+		   NULL, "Lo capisco...", Line_WaitForInput);
+	OutputLine(NULL, "ずっと魅音だと思っていた相手が、実は双子の妹でしたなどと告白したのだ。",
+		   NULL, " in fondo, ho appena confessato davanti a lui che non sono Mion, ma sua sorella gemella.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が魅音を騙って悟史くんを騙し続けて来たのは、紛れもない事実。",
+		   NULL, "È vero che finora l'ho sempre ingannato.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600901", 256, TRUE);
+	OutputLine(NULL, "「………………怒ってます…？」",
+		   NULL, "\"... sei arrabbiato?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200313", 256, TRUE);
+	OutputLine(NULL, "「……なんで？」",
+		   NULL, "\"... perché dovrei?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600902", 256, TRUE);
+	OutputLine(NULL, "「その、……騙してて。」",
+		   NULL, "\"Perché... ti ho mentito.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(1, 7, "sprite/sato1_def2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200314", 256, TRUE);
+	OutputLine(NULL, "「……………………あはははははは。」",
+		   NULL, "\"...... ahahahahahah.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんが突然、朗らかに笑い出す。",
+		   NULL, "Satoshi-kun si mette a ridere.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは場を誤魔化すために笑えるような器用な人じゃない。",
+		   NULL, "L'ha fatto per cercare di rendere questa sceneggiata più credibile?", Line_WaitForInput);
+	OutputLine(NULL, "だからなぜ笑ったのか、私にはちょっとわからなかった。",
+		   NULL, " Proprio non ne capisco il motivo.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200315", 256, TRUE);
+	OutputLine(NULL, "「たまに、教室の魅音と話が食い合わないことがあったから、違和感は感じてたんだ。",
+		   NULL, "\"Ogni tanto ho notato che c'era qualcosa che non andava nel modo in cui parlavi con i nostri compagni di classe.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200316", 256, TRUE);
+	OutputLine(NULL, "……やっとわかったよ。」",
+		   NULL, " ... adesso è tutto chiaro.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600903", 256, TRUE);
+	OutputLine(NULL, "「………怒らないでくれるんですか…？",
+		   NULL, "\"...... non ti dispiace", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600904", 256, TRUE);
+	OutputLine(NULL, "　その、騙してたこと…。」",
+		   NULL, " che ti abbia mentito finora...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは小首を傾げる。",
+		   NULL, "Satoshi-kun ha l'aria perplessa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…少し鈍い悟史くんは、それが怒るべきことなのかもわかりかねているように見えた。",
+		   NULL, "... è come se non sapesse se dover essere infuriato con me oppure no...", Line_WaitForInput);
+	OutputLine(NULL, "………あるいは、そう装ってくれているのか。",
+		   NULL, " oppure, chissà, sta solo fingendo di dare questa impressione.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(1, 7, "sprite/sato1_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200317", 256, TRUE);
+	OutputLine(NULL, "「初めまして、じゃないんだよね…？」",
+		   NULL, "\"Allora non serve dirti 'piacere di conoscerti', giusto...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600905", 256, TRUE);
+	OutputLine(NULL, "「え、…と、………はい、……そうなります…。」",
+		   NULL, "\"Ecco... beh... no, infatti...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200318", 256, TRUE);
+	OutputLine(NULL, "「そっか。",
+		   NULL, "\"D'accordo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200319", 256, TRUE);
+	OutputLine(NULL, "しおんって、どう書くの？」",
+		   NULL, " Come si scrive il tuo nome?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600906", 256, TRUE);
+	OutputLine(NULL, "「詩を詠むの“詩”に音で詩音です。」",
+		   NULL, "\"Con l'ideogramma 'shi' di 'poesia' e con 'on' di 'suono'.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200320", 256, TRUE);
+	OutputLine(NULL, "「詩音…。",
+		   NULL, "\"Shion...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200321", 256, TRUE);
+	OutputLine(NULL, "……うん。」",
+		   NULL, " sì.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600907", 256, TRUE);
+	OutputLine(NULL, "「うん？」",
+		   NULL, "\"Eh?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(1, 7, "sprite/sato1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200322", 256, TRUE);
+	OutputLine(NULL, "「いい名前だね。」",
+		   NULL, "\"Che bel nome.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(3, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700142", 256, TRUE);
+	OutputLine(NULL, "「じゃお二人さん、すみませんが署までご同行願えますかね。",
+		   NULL, "\"A questo punto, che ne dite di seguirci entrambi alla stazione?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700143", 256, TRUE);
+	OutputLine(NULL, "粉末でよければ、コーヒーか紅茶かくらいは選べますよ？」",
+		   NULL, " Abbiamo anche dei preparati per il tè e per il caffè, se volete.\"", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 2, 1000, TRUE, 0 );
+	ModFadeOutBGM( 1, 1000, TRUE, 1 );
+	SetValidityOfSkipping( FALSE );
+	DrawSceneWithMask("tips/gettip_meak011", "mask1900", 7, 0, 400 );
+	Wait( 5000 );
+	DrawSceneWithMask("black", "mask1900", 7, 0, 400 );
+	SetValidityOfSkipping( TRUE );
+}

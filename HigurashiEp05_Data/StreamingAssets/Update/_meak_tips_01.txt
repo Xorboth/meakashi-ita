@@ -1,0 +1,271 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+	DrawScene("background/nort", 1000 );
+
+	PlayBGM( 0, "Nazo", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和５７年６月の某日。",
+		   NULL, "Giugno 1982.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　綿流しの祭りの数日後に北条悟史は失踪する。",
+		   NULL, "Satoshi Houjou scompare alcuni giorni dopo il festival del Watanagashi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんが失踪する理由は常識的に考えて３つある。",
+		   NULL, "Ci sono tre possibili cause della sua sparizione.", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　１つは事故等によるもの。",
+		   NULL, "La prima è che si sia trattato di un incidente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　車にはねられ、用水路等に落ちて、遺体が発見されたのが数ヵ月後なんて言う話も時にある。",
+		   NULL, "A volte, i cadaveri di persone investite dalle auto vengono alla luce tra i canali di irrigazione diversi mesi dopo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、悟史くんの行動半径を中心に警察が十分に捜査した上で、未だ見つからないのだから、これは違うように思う。",
+		   NULL, "Ma dato che la polizia ha indagato a sufficienza sulla sparizione di Satoshi-kun e non ha mai trovato il suo corpo, questa eventualità è poco plausibile.", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もう１つは自発的失踪。",
+		   NULL, "La seconda è che abbia deciso da solo di andarsene.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの生活は、精神的に非常に追い詰められたものだった。",
+		   NULL, "L'ambiente in cui viveva Satoshi-kun metteva a dura prova la sua pazienza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　実際、彼は周囲に蒸発したいようなグチを漏らしたこともあるらしい。",
+		   NULL, "Alcuni dei suoi amici, infatti, l'hanno sentito spesso accennare che sarebbe potuto scappare di casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察は、叔母殺しは悟史くんが犯人で、逃亡したからではないかと見ていた。",
+		   NULL, "La polizia ritiene che Satoshi-kun sia colpevole dell'omicidio di sua zia, e che per questo si sia dato alla fuga.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それらを加味して考えると一番現実味がある。",
+		   NULL, "Considerando la situazione, è un'ipotesi sensata.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だがその後、犯人は別にいることがわかったため、この説は否定された。",
+		   NULL, "Ma è stata arrestata un'altra persona ritenuta colpevole dell'omicidio, e perciò anche questa teoria è da scartare.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最後の１つは、雛見沢村連続怪死事件、",
+		   NULL, "La terza e ultima possibilità è che sia rimasto coinvolto nella serie di morti misteriose di Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　通称オヤシロさまの祟りの犠牲者となり、失踪したという考え方。",
+		   NULL, "Chiamata anche \"La Maledizione di Oyashiro-sama\", esiste la possibilità che ne sia rimasto vittima e che sia stato \"rapito dai demoni.\"", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまというオカルト的な存在の立証ができない限り、この事件は間違いなく人の手で起こされている。",
+		   NULL, "Finché il potere occulto di Oyashiro-sama non verrà verificato, tuttavia, la cosiddetta maledizione è da ritenersi opera umana.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんは何者かの手によって、消されたと考えるのが一番妥当だ。",
+		   NULL, "È naturale presumere che Satoshi-kun sia stato fatto sparire per volontà di qualcuno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ならば一番の問題は、手を下したのは何者か、ということになる。",
+		   NULL, "E qui sorge la domanda: chi è stato a deciderlo?", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　結論から言うと。",
+		   NULL, "La rosa di sospettati è limitata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎本家か、その意向を汲んだ御三家筋、親戚筋の何者かが犯人であることはほぼ間違いない。",
+		   NULL, "Il colpevole dev'essere o un membro della famiglia Sonozaki, o un membro delle Tre Famiglie o un parente di queste ultime.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……いや、この程度までなら警察だってわかる。",
+		   NULL, "...... persino la polizia non ha avuto problemi a capirlo.", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本当に考えるべきはここからなのだ。",
+		   NULL, "Ma io devo pensare oltre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　実際に、誰が、どのようにして、何のために？",
+		   NULL, "Chi è stato? Come ha fatto? Per quale motivo?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜ悟史くんは犠牲にならなくてはならなかったのか。",
+		   NULL, "Perché è toccato proprio a Satoshi-kun?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　動機は何なのか。",
+		   NULL, "Qual è il movente?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　命令を下したのは誰なのか。",
+		   NULL, "Chi ha dato l'ordine?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　実行したのは誰なのか。",
+		   NULL, "Chi è stato l'esecutore materiale?", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　黒幕も、犯人も、そして真実も。",
+		   NULL, "La mente, il colpevole, e la verità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全ては私のすぐ近くにある。",
+		   NULL, "Sono tutti qui vicino.", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ひょっとすると、それはすぐ背中辺りにあるのかもしれない。",
+		   NULL, "Forse mi sono addirittura appiccicati alla schiena.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、たとえ自分の背中であっても、満遍なく手が届くわけじゃない。",
+		   NULL, "Però, nonostante siano così vicini, ancora non riesco ad afferrarli.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　手が届きにくい場所、手で触れるには肩の関節を痛めて歯を食いしばって、やっと指先が触れる程度の場所もある。",
+		   NULL, "Alcune zone della schiena sono difficili da raggiungere, al punto che devo stringere i denti e quasi dislocarmi un'articolazione per poterle sfiorare con la punta delle dita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の求めるものは、そういう場所に隠されているのだ。",
+		   NULL, "La verità che cerco è celata in luoghi come quelli.", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これより記す記録は。",
+		   NULL, "Sto scrivendo tutto questo...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の考察を整理するためのメモであると同時に、私の悔悟を書き記したものでもある。",
+		   NULL, "... perché mi permette di organizzare meglio i miei pensieri e di dare un senso ai miei rimorsi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このメモが私以外の目に触れることはないだろうとは思う。",
+		   NULL, "Tanto nessuno lo leggerà mai a parte me.", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もしも私以外がこのメモを読むようなことがあるとすれば。",
+		   NULL, "Se qualcuno ci riuscisse...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私は真相を解き明かしこのメモが不要となったので廃棄したか、",
+		   NULL, "... vorrebbe dire che avrei gettato via questi appunti perché non ne avrei più bisogno,", Line_WaitForInput);
+	OutputLine(NULL, "私が志半ばで「オヤシロさまの祟り」に遭い失踪してこのメモだけが残ったかのどちらかだ。",
+		   NULL, " o perché sarei caduta vittima della maledizione di Oyashiro-sama, nel tentativo si risolvere il mistero.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前者ならいい。",
+		   NULL, "Nel primo caso, mi starebbe bene.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だがもしも後者だったのなら。",
+		   NULL, "... ma nel secondo...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どうかあなた。",
+		   NULL, "Allora, ti prego.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の力になって欲しい。",
+		   NULL, "Aiutami.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　無力で、ただの小娘に過ぎない私のために。",
+		   NULL, "Aiuta questa povera ragazza indifesa.", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

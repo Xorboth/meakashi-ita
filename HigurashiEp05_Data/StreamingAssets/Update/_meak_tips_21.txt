@@ -1,0 +1,144 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎詩音の、死の間際の告白の信憑性は不明。",
+		   NULL, "L'ultima confessione di Shion Sonozaki non mi convince.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎本家は何もやっていないと、鬼婆があっさり詩音を騙したのか。",
+		   NULL, "La vecchia deve averle fatto il lavaggio del cervello fino a farle credere che la famiglia Sonozaki non ha niente a che fare con tutto questo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本当に園崎本家は何もやっていないのか。",
+		   NULL, "Però... se fosse la verità?", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私自身が今日までの調査で、園崎本家の存在だけで祟りを説明できないことを証明してしまっている。",
+		   NULL, "Attraverso le mie indagini, ho dimostrato che vi sono aspetti della maledizione che non possono essere spiegati usando solo la famiglia Sonozaki.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう、だからこの私のノートは、１ページ目の冒頭から全部でたらめ。",
+		   NULL, "Dunque, i miei appunti sono da prendere e scartare fin dalla prima pagina.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が２００ページ近くも書き溜めてきたこのノートは、ただの狂人の世迷言。",
+		   NULL, "Queste duecento pagine che ho accumulato nel tempo non sono altro che spazzatura.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ノートを破り捨てて焚き火に放り込もうかとも思った。",
+		   NULL, "Ho avuto la mezza idea di stracciarle e gettarle nel fuoco.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもやめた。",
+		   NULL, "Ma ho cambiato idea.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このノートは私の罪の証。",
+		   NULL, "Questo quaderno dimostra la mia colpevolezza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は罪を誤魔化さない。",
+		   NULL, "Non distorcerò la verità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから灰にして消してしまったりなどしない。",
+		   NULL, "Ed è per questo che non lo ridurrò in cenere.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の人生は結局、ノート１冊で表せる程度だった。",
+		   NULL, "In fondo, la mia vita è talmente vuota da poter essere riassunta appena in un quaderno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このノートを誰かが読むことがあるだろうか。",
+		   NULL, "Dubito che qualcuno avrà voglia di leggerlo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　読むことがあったならどうか、私の愚かしさから何かの教訓を。",
+		   NULL, "Ma se qualcuno lo farà sul serio, allora spero che impari qualcosa dalla mia idiozia.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢村連続怪死事件。",
+		   NULL, "La serie di morti misteriose avvenute a Hinamizawa...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　通称、オヤシロさまの祟り。",
+		   NULL, "Conosciuta anche come \"La maledizione di Oyashiro-sama\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これを読んでいる私以外のあなた。",
+		   NULL, "Se stai leggendo queste pagine...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どうか真相を。",
+		   NULL, "allora ti prego, scopri la verità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それだけが、",
+		   NULL, "Questo è", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "私の",
+		   NULL, " il mio unico", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1100 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "望みです。",
+		   NULL, " desiderio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	SetSpeedOfMessage( TRUE, 128 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "昭和５８年６月※※日",
+		   NULL, "XX giugno 1983", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎魅音",
+		   NULL, "Mion Sonozaki", Line_Normal);
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

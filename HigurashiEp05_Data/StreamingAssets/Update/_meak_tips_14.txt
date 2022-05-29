@@ -1,0 +1,88 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/jsa1", 1000 );
+	PlayBGM( 0, "depressive paranoia", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祭具殿の不可侵性は、オヤシロさま崇拝の中でも群を抜く。",
+		   NULL, "La sacralità del magazzino rituale è uno degli elementi predominanti nel culto di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろんそれは私も、雛見沢に縁のある人間として知ってはいた。",
+		   NULL, "Ovviamente, dato che sono originaria di Hinamizawa, io lo so benissimo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、実際は私が知る以上に、もっともっと偏執的なくらいの不可侵性があったのだ。",
+		   NULL, "Ma violare il magazzino è in verità un atto molto più grave e punibile di quanto pensassi.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんの研究によるなら、祭具殿の不可侵性の歴史は相当古いという。",
+		   NULL, "La ricerca storica e rituale di Takano-san nei confronti del magazzino va molto indietro nel passato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それだけ祭具を使った奇祭「綿流し」が神聖視されていたことの証だろう。",
+		   NULL, "Gli oggetti al suo interno sono sempre stati visti come oggetti proibiti, motivo per cui è severamente proibito entrarvi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、鷹野さんの研究では綿流しは純粋な宗教儀式でなく、御三家の支配体制をより磐石にするための、公開処刑的な意味があったという。",
+		   NULL, "La teoria di Takano-san dice che il Watanagashi, in passato, più che un rituale, altro non era che un'esecuzione pubblica che serviva a stabilire il predominio delle Tre Famiglie.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawScene("background/jysa1", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だとするなら、そもそも神聖視という呼び方が間違っている。",
+		   NULL, "Ecco perché gli strumenti che ivi si trovano sono lungi dall'essere definibili \"sacri\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな状況下でなら、憎悪と恐怖の対象として疎まれた存在のはず。",
+		   NULL, "In queste circostanze, gli strumenti dovrebbero essere disprezzati in quanto vessilli di odio e terrore.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　恐怖は露見し過ぎればただの恐怖支配に過ぎない。",
+		   NULL, "Quando tali oggetti sono in bella mostra, non servono ad altro che a generare un regno di terrore.", Line_WaitForInput);
+	OutputLine(NULL, "だが、極力隠せば神聖さが宿る。",
+		   NULL, " Ma basta tenerli nascosti il più possibile ed ecco che assumono una connotazione mistica e sacra.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　俗人が触れると穢れがつくとよく言う。",
+		   NULL, "Si dice che la gente comune venga macchiata per sempre se ne tocca uno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは衆人環視に晒されたら威厳がなくなるので、もったいぶって隠した方が、箔がつく…という意味でしかないのだ。",
+		   NULL, "Ma il vero motivo è che serve a preservare il loro falso prestigio attraverso la segretezza, dato che altrimenti perderebbero la loro sacralità una volta mostrati al pubblico.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、祭具殿の不可侵性の正体は、…恐怖。",
+		   NULL, "In parole povere, la vera identità della sacralità del magazzino rituale... è la paura.", Line_WaitForInput);
+	OutputLine(NULL, "この村を支配する真の感情の正体なのだ……。",
+		   NULL, " È questo il sentimento che governa il villaggio...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

@@ -1,0 +1,72 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "z2_hig1", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんが東京へ行った、という怪情報の裏付けは全く取れない。",
+		   NULL, "L'informazione secondo cui Satoshi-kun sarebbe arrivato a Tokyo non è stata verificata.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そもそも情報の発端はこうだ。",
+		   NULL, "Seguono i dettagli.", Line_Normal);
+	ClearMessage();
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/eki", "maskup", 1, 0, 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　名古屋駅の遺失物窓口に若者が訪れて、自分の財布が届けられてないかと騒いだのだ。",
+		   NULL, "Un ragazzo si è presentato alla sezione oggetti smarriti della stazione di Nagoya, chiedendo se fosse stato trovato il suo portafogli.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それで駅の職員が、届け出がないか調べてきますからその間にこちらにお名前を書いてください、と用紙を渡した。",
+		   NULL, "L'addetto della stazione, riferendo che sarebbe andato subito a cercare, nel frattempo ha chiesto al giovane di scrivere il proprio nome su di un modulo.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そうしたらその若者は、北条と書きかけてからその用紙をくしゃくしゃにして捨て、もう１枚の用紙に全然違う名前を書いた、というのだ。",
+		   NULL, "Il ragazzo ha iniziato a scrivere il cognome Houjou, ma si è interrotto a metà, ha accartocciato il foglio e ne ha preso uno nuovo, scrivendo poi un cognome differente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　別の職員は、その遺失物窓口を訪れた若者と、服装が酷似した若者が東京行きの新幹線に駆け込むのを見ていた。",
+		   NULL, "Un altro addetto ha detto di aver visto un giovane vestito in modo simile diretto verso i binari della linea shinkansen diretta a Tokyo.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　更衣室で遺失物窓口にいた職員が、不審な人物が来たと特徴を話したら、",
+		   NULL, "I due si sono visti nello spogliatoio, e l'addetto agli oggetti smarriti ha raccontato all'altro dello strano ragazzo venuto a cercare il portafogli,", Line_WaitForInput);
+	OutputLine(NULL, "ホームにいた職員が、あぁ見た見た、東京行きの新幹線に飛び乗ったぜ、と。",
+		   NULL, " al che il collega, sentendone la descrizione,", Line_WaitForInput);
+	OutputLine(NULL, "そう言い合ったらしい。",
+		   NULL, " ha detto di averlo visto al binario per lo shinkansen.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それだけのこと。",
+		   NULL, "... non c'è altro.", Line_Normal);
+	ClearMessage();
+	DrawScene("black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その北条を名乗った男の申告する特徴の財布は、遺失物窓口には届いていなかった。",
+		   NULL, "Il portafoglio della persona chiamata Houjou non è mai stato segnalato come ritrovato dallo sportello degli oggetti smarriti.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

@@ -1,0 +1,221 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 400 );
+	PlayBGM( 0, "getting_mad", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここで、あの奇怪な少女との雨の中の会話を考察してみよう。",
+		   NULL, "Adesso, proviamo a ricordare il mio incontro sotto la pioggia con quella ragazza inquietante.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawScene("black", 300 );
+	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 2, "sprite/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　竜宮レナ。",
+		   NULL, "Si chiama Rena Ryuugu.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本名は竜宮礼奈（れいな）",
+		   NULL, "Il suo vero nome è Reina.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この不思議な子の正体はよくわからない。",
+		   NULL, "Non ho idea di cosa sia esattamente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ひとつ確かなのは、園崎本家とは何のつながりもない人間、ということだ。",
+		   NULL, "Una cosa è certa: non ha alcun legame con la famiglia Sonozaki.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろん御三家の何れとも縁を持たない。",
+		   NULL, "E non ne ha neppure con altre delle Tre Famiglie.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　竜宮家は確かに昔、雛見沢に住んでいた。",
+		   NULL, "La famiglia Ryuugu viveva a Hinamizawa,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その後、茨城へ引越したことについては、本人が言った通りだ。",
+		   NULL, "ma poi si trasferì a Ibaraki.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　小学校に上がる前に茨城へ引越し、",
+		   NULL, "Questo prima che la ragazza iniziasse a frequentare le elementari.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……その後、雛見沢に戻ってきた。",
+		   NULL, " ... tornarono a Hinamizawa solo anni dopo.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　竜宮レナ本人は、オヤシロさまの警告（祟り？）を受けて雛見沢へ帰ってきたと言っている。",
+		   NULL, "Rena Ryuugu disse di essere tornata perché era stata ammonita (o maledetta?) da Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これが何を指すかは不明。",
+		   NULL, "Non so cosa significhi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　本人は「オヤシロさまの祟り」を受けたことがあると自称している。",
+		   NULL, "Lei stessa disse che la causa era la maledizione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまが、常に自分を見張り、ヒタヒタと後をつけてくる、というのだ。",
+		   NULL, "Disse che Oyashiro-sama le stava alle costole, come se la pedinasse costantemente.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は被害妄想か何かではないかと思っているのだが、…奇しくもその体験は、悟史くんの興味を大きく引くことになる。",
+		   NULL, "Secondo me si trattava solo di allucinazioni, ma Satoshi-kun iniziò a interessarsi a quella vicenda.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女が言うには、悟史くんもこの時点で、オヤシロさまの祟りを受けつつある、というのだ。",
+		   NULL, "La ragazza disse che anche Satoshi-kun, a quel tempo, era già sotto l'influsso della maledizione di Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawScene("black", 400 );
+	FadeFilm( 0, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんはこの子に、自分もまた得体の知れない存在に後を付けられていると告白したらしい。",
+		   NULL, "Pare che Satoshi-kun le confessò che una strana presenza lo stava seguendo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、この子の「経験談」が自分と一致することに大いに驚いたらしい。",
+		   NULL, "Rimase sorpreso sapendo che anche lei aveva vissuto la sua stessa esperienza paranormale.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawSceneWithMask("background/hi1", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまの祟りとは…？",
+		   NULL, "Che cos'è la maledizione di Oyashiro-sama...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜレナと悟史くんは共通の体験を？",
+		   NULL, "Perché successe sia a Rena che a Satoshi-kun?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは多分、村の何者かによる監視のことではないかと見ている。",
+		   NULL, "La storia della strana presenza deve riferirsi a qualcuno all'interno del villaggio che li stava sorvegliando.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その年の祟りの犠牲者の動向を監視しているに違いないのだ。",
+		   NULL, "Qualcuno, in pratica, stava spiando la prossima vittima della maledizione di quell'anno.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……オヤシロさまの祟りを妄信してしまった悟史くんたちには、それがオヤシロさまの気配に感じられるに違いない。",
+		   NULL, "...... dato che Rena e Satoshi-kun credevano ciecamente alla maledizione di Oyashiro-sama, significa che ritenevano che la maledizione avesse un qualche influsso su di loro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あとは被害妄想が重なれば、異常な体験をしているように感じてしまうのも無理ないはずだ。",
+		   NULL, "Non mi sorprende che potessero etichettare come \"esperienza paranormale\" ogni loro comportamento che, agli occhi di uno psicologo, non sarebbe altro che indice di una mania di persecuzione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまりレナがもたらしてくれた情報から、悟史くんは綿流しのずっと前から監視下に置かれていたらしいことが窺えるのだ。",
+		   NULL, "A giudicare dalle parole di Rena, pare che Satoshi-kun fosse stato messo sotto sorveglianza da molto prima del Watanagashi.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawScene("background/aka2", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だとすると。",
+		   NULL, "Quindi,", Line_WaitForInput);
+	OutputLine(NULL, "ここでひとつの疑問が浮かぶ。",
+		   NULL, " una domanda sorge spontanea.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それはレナが受けた「監視」の意味だ。",
+		   NULL, "Perché anche Rena era nel mirino?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はこの監視は、その年の犠牲者に対して行なわれると仮定した。",
+		   NULL, "Deduco che sotto sorveglianza ci dovesse essere solo la futura vittima di quell'anno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、だとするならレナに対する監視の意味がわからない。",
+		   NULL, "Ma questo va contro a ciò che Rena dovette passare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢と違い、遠い異郷の地に住まう彼女を、どういう意味があって監視したのか。",
+		   NULL, "Perché tenerla sotto sorveglianza anche se abitava in una città tanto lontana?", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　故郷を捨てた村人、という位置付けでなら、なるほど、彼女が祟りに遭うのもわからなくない。",
+		   NULL, "Se la motivazione della sua eventuale morte fosse stata il suo aver abbandonato il villaggio, allora potrei anche capire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、…彼女は結局、犠牲にならずに済んだ。",
+		   NULL, "Tuttavia... alla fine, Rena non morì né scomparve.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢へ引越しが決まったから免罪になったのかもしれない。",
+		   NULL, "Forse venne perdonata perché si trasferì di nuovo a Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…彼女は、私の知らないことを、まだ何か知っているような気がする…。",
+		   NULL, "... scommetto che quella ragazza conosce cose di cui io non sono ancora a conoscenza...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

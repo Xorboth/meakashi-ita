@@ -1,0 +1,60 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps2/06/150601924", 540, TRUE);
+	OutputLine(NULL, "「あれ、どう思います？",
+		   NULL, "\"Eh? Cosa te lo fa pensare?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601925", 256, TRUE);
+	OutputLine(NULL, "　……私は、…あはは、私がこういうのも変だけど、悟史くんが叔母殺しの犯人だって信じてるですよ。",
+		   NULL, " Io... ahahah, forse non dovrei dirlo, ma credo che Satoshi-kun sia davvero il colpevole.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601926", 256, TRUE);
+	OutputLine(NULL, "あいつは、例えば鬼婆辺りに買収されて仕立て上げられた身代わりじゃないかと思うんですけど。」",
+		   NULL, " La storia del tossico sarà stata un'invenzione comoda della vecchia.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601930", 256, TRUE);
+	OutputLine(NULL, "「…鬼婆が裏の世界で相当の力を持ってる、というのは私も知ってはいますけど…。",
+		   NULL, "\"... sapevo che la vecchia detiene larga parte del potere di Hinamizawa,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601931", 256, TRUE);
+	OutputLine(NULL, "そんなにもあったんですね。」",
+		   NULL, " ma non sapevo che potesse arrivare fino a questo punto...\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601934", 256, TRUE);
+	OutputLine(NULL, "「……ふぅん。",
+		   NULL, "\"... uhm.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601935", 256, TRUE);
+	OutputLine(NULL, "……身近に居すぎて私がよくわかってなかっただけで。",
+		   NULL, " Mi trovavo nel bel mezzo di tutto questo quando successe, ma non me ne resi mai conto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601936", 256, TRUE);
+	OutputLine(NULL, "………やっぱり鬼婆や御三家や、旧同盟って大したもんだったんですね。",
+		   NULL, " La vecchia, le Tre Famiglie e gli ex-Guardiani sono davvero dei tipi in gamba, non trovi?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601937", 256, TRUE);
+	OutputLine(NULL, "…怖い怖い。」",
+		   NULL, " Gente temibile...\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601951", 256, TRUE);
+	OutputLine(NULL, "「もし居合わせたら。",
+		   NULL, "\"Se fossi stata lì, in quel momento...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601952", 256, TRUE);
+	OutputLine(NULL, "……悟史くんを許してもらえるよう、鬼婆に意見してくれたかな………。」",
+		   NULL, " avresti implorato la vecchia di perdonarlo?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

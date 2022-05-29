@@ -1,0 +1,75 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 400 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この時の祭具殿侵入が、結局、鷹野さんたちの祟られる理由となった。",
+		   NULL, "Takano-san e Tomitake-san sono stati maledetti perché si sono intrufolati nel magazzino sacro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祭具殿侵入がどういう形で発覚したのかは分からない。",
+		   NULL, "Non ho idea di come li abbiano scoperti.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最初に思いつくのは、何者かに目撃されていたこと。",
+		   NULL, "La prima cosa che mi viene in mente è che qualcuno li stesse seguendo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　次に思いつくのは、侵入警報のようなものがあったこと。",
+		   NULL, "Altrimenti, potrebbe essersi trattato di un qualche sistema di antifurto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何れにせよ、この祭具殿侵入はおそらくリアルタイムで祟りのシステムの上位者に通報されていた。",
+		   NULL, "In ogni caso, la nostra intrusione dev'essere stata riferita in tempo reale ai piani alti del sistema della maledizione.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜなら、もっとも遠い地で遺体が見つかることになる鷹野さんの殺された時間などを考えると、",
+		   NULL, "Questo perché, considerando l'ora e la distanza che c'è tra il villaggio e il luogo dov'è stato rinvenuto il corpo di Takano-san,", Line_WaitForInput);
+	OutputLine(NULL, "祭具殿を出て私たちが分かれてすぐくらいに殺されてなければならないからだ。",
+		   NULL, " dev'essere stata uccisa poco dopo essere usciti dal magazzino.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この手際の良さは特筆に値する。",
+		   NULL, "La loro celerità ha dell'incredibile.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　相当高度な暗殺部隊が組織されているのか、さもなければ「５年目の祟りの準備」がすでにされていたからなのか。",
+		   NULL, "È possibile che esista una squadra speciale di assassini fatta apposta per queste evenienze, oppure che il piano fosse stato orchestrato già dal primo dei cinque anni di morti misteriose di fila.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎家の暗部を担当する秘密の集団の存在も否定できないが、後者の説の方が信憑性がある。",
+		   NULL, "Non posso negare che un tale gruppo di specialisti esista davvero, ma la seconda ipotesi mi sembra più sensata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　しかし、だとすると、５年目の祟りは、祭具殿侵入がなかったら「本来」誰に下されていたのか、という疑問にぶつかる。",
+		   NULL, "Tuttavia, se questo fosse il caso, chi sarebbero state le vittime predestinate se non fossimo entrati noi nel magazzino rituale?", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

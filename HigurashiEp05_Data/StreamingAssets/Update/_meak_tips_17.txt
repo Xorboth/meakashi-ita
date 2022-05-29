@@ -1,0 +1,104 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "yoru", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　５年目の祟り以降、もっとも電話が多かったのは、やはり側近の公由家頭首だった。",
+		   NULL, "Durante la maledizione del quinto anno, il capofamiglia dei Kimiyoshi è stato quello che ha telefonato più spesso.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　次いで多かったのがうちの父親だった。",
+		   NULL, "In seconda posizione c'è mio padre.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　うちの両親の序列は高いには高いが、うちの母親の昔の勘当騒ぎが尾を引いていて、表舞台にそうそう顔を出せない、やや日陰者っぽい扱いなのだと言う。",
+		   NULL, "I miei genitori sono in alto nella gerarchia, ma il polverone alzato da mia madre dopo essere stata diseredata è ancora presente, e perciò veniamo trattati alla stregua dei fuoricasta.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その父親からの電話が多いのは、対外的には距離を置いていても、実際には重用していた鬼婆の陽と陰の二面性の証拠でもある。",
+		   NULL, "Il fatto che mio padre abbia telefonato all'abitazione principale dei Sonozaki dimostra quanto importante sia la vecchia, nonostante il cattivo sangue, nonché quanto sia ancora rispettata da chiunque.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親は、どうも情報面での操作が主な役割のようだった。",
+		   NULL, "Mio padre pare essere l'incaricato della raccolta informazioni.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察情報や裏情報、噂、そういったアンダーグランドな情報を収集しては的確に報告していた。",
+		   NULL, "Ci fa sempre rapporto dei pettegolezzi e delle storie che girano tra la polizia e la yakuza controllata dalla vecchia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして鬼婆の要請があれば、それらを黙らせたり、煽り立てたり、捻じ曲げたりできるようだった。",
+		   NULL, "Poi, sempre su ordine della vecchia, censura, taglia e distorce determinate informazioni.", Line_Normal);
+	ClearMessage();
+	DrawScene("black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ちなみに私の忠臣、葛西は父親と旧知の間柄。",
+		   NULL, "A proposito, il mio sottoposto Kasai è un vecchio amico di mio padre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……なるほど、色々と情報に精通しているのも頷けた。",
+		   NULL, "... dev'essere questo il motivo per cui conosce così tante informazioni.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが「情報」までのようだ。",
+		   NULL, "Tuttavia, la sua conoscenza si ferma qui.", Line_WaitForInput);
+	OutputLine(NULL, "「執行」にまで至っていたかは掴みきれない。",
+		   NULL, " Non arriva al punto di sapere se e come avvengono davvero le cose.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　父親は、今回の事件に対する、警察の捜査状況やその他の情報を貪欲に集め報告するばかりで、",
+		   NULL, "A giudicare da questa situazione, il fatto che mio padre si interessi al reperire costantemente informazioni da ogni fonte", Line_WaitForInput);
+	OutputLine(NULL, "少なくとも今年の祟りについては、自身が関与したわけではなさそうだった。",
+		   NULL, " dimostra che non è coinvolto nell'esecuzione materiale della maledizione.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…一般的には、父親と鬼婆がこんなにも密接なホットラインを持っていることは知られていない。",
+		   NULL, "... il profondo legame tra le vecchia e mio padre non è cosa divulgata al resto degli abitanti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのネットワークを利用はするが、やはり外様ということでそれほど近しくしていない…と思われているのが一般的だ。",
+		   NULL, "La gente sa che la vecchia utilizza il suo network segreto, ma di certo non sa cosa ci sia oltre.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ならこの例のように、一般に知られていない、鬼婆直轄の何か。",
+		   NULL, "Allo stesso modo, c'è un'altra cosa che la gente non sa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…祟りのシステムを管轄する暗黒部門の存在は、充分に疑える……。",
+		   NULL, "E cioè che possa esistere una specie di \"squadra di esecuzione della maledizione\", all'oscuro di tutti, che esegue gli ordini della vecchia...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

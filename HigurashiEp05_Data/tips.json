@@ -1,0 +1,142 @@
+{
+    "0": [
+        {
+            "Id": 1,
+            "Script": "_meak_tips_01",
+            "Title": "Incipit del Quaderno",
+            "TitleJp": "ノートの冒頭"
+        },
+        {
+            "Id": 2,
+            "Script": "_meak_tips_02",
+            "Title": "Diario Macchiaro",
+            "TitleJp": "にじんだ日記"
+        },
+        {
+            "Id": 3,
+            "Script": "_meak_tips_03",
+            "Title": "Diario Stropicciato",
+            "TitleJp": "くしゃくしゃの日記"
+        },
+        {
+            "Id": 4,
+            "Script": "_meak_tips_04",
+            "Title": "Pagina 21 del Quaderno",
+            "TitleJp": "ノート２１ページ"
+        },
+        {
+            "Id": 5,
+            "Script": "_meak_tips_05",
+            "Title": "Pagina 24 del Quaderno",
+            "TitleJp": "ノート２４ページ"
+        },
+        {
+            "Id": 6,
+            "Script": "_meak_tips_06",
+            "Title": "Diario Strappato",
+            "TitleJp": "粉々の日記"
+        },
+        {
+            "Id": 7,
+            "Script": "_meak_tips_07",
+            "Title": "Pagina 29 del Quaderno",
+            "TitleJp": "ノート２９ページ"
+        },
+        {
+            "Id": 8,
+            "Script": "_meak_tips_08",
+            "Title": "Pagina 34 del Quaderno",
+            "TitleJp": "ノートの３４ページ"
+        },
+        {
+            "Id": 9,
+            "Script": "_meak_tips_09",
+            "Title": "Pagina 42 del Quaderno",
+            "TitleJp": "ノートの４２ページ"
+        },
+        {
+            "Id": 10,
+            "Script": "_meak_tips_10",
+            "Title": "Pagina 50 del Quaderno",
+            "TitleJp": "ノートの５０ページ"
+        },
+        {
+            "Id": 11,
+            "Script": "_meak_tips_11",
+            "Title": "Pagina 64 del Quaderno",
+            "TitleJp": "ノートの６４ページ"
+        },
+        {
+            "Id": 12,
+            "Script": "_meak_tips_12",
+            "Title": "Pagina 85 del Quaderno",
+            "TitleJp": "ノートの８５ページ"
+        },
+        {
+            "Id": 13,
+            "Script": "_meak_tips_13",
+            "Title": "Pagina 172 del Quaderno",
+            "TitleJp": "ノートの１７２ページ"
+        },
+        {
+            "Id": 14,
+            "Script": "_meak_tips_14",
+            "Title": "Pagina 173 del Quaderno",
+            "TitleJp": "ノートの１７３ページ"
+        },
+        {
+            "Id": 15,
+            "Script": "_meak_tips_15",
+            "Title": "Pagina 179 del Quaderno",
+            "TitleJp": "ノートの１７９ページ"
+        },
+        {
+            "Id": 16,
+            "Script": "_meak_tips_16",
+            "Title": "Pagina 183 del Quaderno",
+            "TitleJp": "ノートの１８３ページ"
+        },
+        {
+            "Id": 17,
+            "Script": "_meak_tips_17",
+            "Title": "Pagina 185 del Quaderno",
+            "TitleJp": "ノートの１８５ページ"
+        },
+        {
+            "Id": 18,
+            "Script": "_meak_tips_18",
+            "Title": "Pagina 188 del Quaderno",
+            "TitleJp": "ノートの１８８ページ"
+        },
+        {
+            "Id": 19,
+            "Script": "_meak_tips_19",
+            "Title": "Pagina 195 del Quaderno",
+            "TitleJp": "ノートの１９５ページ"
+        },
+        {
+            "Id": 20,
+            "Script": "_meak_tips_20",
+            "Title": "Pagina 196 del Quaderno",
+            "TitleJp": "ノートの１９６ページ"
+        },
+        {
+            "Id": 21,
+            "Script": "_meak_tips_21",
+            "Title": "Pagina 199 del Quaderno",
+            "TitleJp": "ノートの１９９ページ"
+        },
+        {
+            "Id": 22,
+            "Script": "_meak_tips_22",
+            "Title": "Un Diario Allegro",
+            "TitleJp": "幸せのノート"
+        },
+        {
+            "Id": 23,
+            "Script": "_meak_tips_23",
+            "Title": "Diseredata A Fil di Spada",
+            "TitleJp": "チャンバラで勘当"
+        }
+    ]
+}

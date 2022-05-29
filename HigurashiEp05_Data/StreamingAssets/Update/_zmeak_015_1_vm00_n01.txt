@@ -1,0 +1,320 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Teppista</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15007", 256, TRUE);
+	OutputLine(NULL, "「こんの女、いいドテしてまんもおなぁ…！",
+		   NULL, "\"Quella ragazza ha due tette enormi...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15008", 256, TRUE);
+	OutputLine(NULL, "　脱がしたらさぞや…むげへへへへへへ！！」",
+		   NULL, " Spogliamola e guardiamola più da vicino... eheheheheheh!!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Teppista</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15019", 256, TRUE);
+	OutputLine(NULL, "「おお、俺んさ、ＡＶなんかでよぉやっとる脱がッシーンが好きでさ！！",
+		   NULL, "\"M-mi piace quando le ragazze iniziano a spogliarsi nei film porno!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15020", 256, TRUE);
+	OutputLine(NULL, "　はぁはぁ！」",
+		   NULL, " Anf, anf!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Teppista</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryob15007", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「あぁあぁやっぱりＨシーンそのもんよりゃあその前座の脱がすシーンも興奮すっさなぁあぁ…！！」",
+		   NULL, "\"Sìììì, quando si spogliano è anche meglio delle scene di sesso...!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Teppista</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15021", 256, TRUE);
+	OutputLine(NULL, "「むはあぁああぁ脱がすあんもええぇんのおおぉおぉ！！」",
+		   NULL, "\"Mwaaaaahhhh, adoro gli spogliarelli!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Teppista</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryob15008", 256, TRUE);
+	OutputLine(NULL, "「剥き剥き、脱ぎ脱ぎ！！",
+		   NULL, "\"Spogliamola! Spogliamola!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryob15009", 256, TRUE);
+	OutputLine(NULL, "　はああぁあええのんしゃああ〜〜！！！」",
+		   NULL, " EeeehhhvvaiiiiiiI!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Teppista</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15009", 256, TRUE);
+	OutputLine(NULL, "「上から下までぜ〜〜んぶ脱がっしゃあよぉおおー！",
+		   NULL, "\"Strappiamole tutti i vestiti!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoc15010", 256, TRUE);
+	OutputLine(NULL, "　靴下までぜえんぶひん剥いてぇえ、生まれたまんまあの姿にしちゃあるんけん〜〜〜！！！！！」",
+		   NULL, " Togliamole anche i calzini, mi raccomando! Voglio vederla come mamma l'ha fatta dalla testa ai piedi!!!!!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601325", 256, TRUE);
+	OutputLine(NULL, "「ちょ、あんたら冗談でしょ？！？！",
+		   NULL, "\"Volete darvi una calmata?!?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601326", 256, TRUE);
+	OutputLine(NULL, "　そのスケベ丸出しな手で私に触れるなー！！！」",
+		   NULL, " Non toccatemi con quelle vostre mani luride!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100016", 256, TRUE);
+	OutputLine(NULL, "「全裸には萌えがない！！！",
+		   NULL, "\"Non c'è niente di moe nell'essere nudi!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100017", 256, TRUE);
+	OutputLine(NULL, "　服は脱がしても靴下は脱がすな！！",
+		   NULL, " Lasciatele almeno i calzini!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100018", 256, TRUE);
+	OutputLine(NULL, "　たとえお天道様が西から昇ることがあろうとも！！",
+		   NULL, " Se anche il mondo dovesse smettere di ruotare!!", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "s_daidageki", 56, 64 );
+	DrawScene("background/furiker_b", 100 );
+	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 1, "sprite/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/mati4", 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100019", 256, TRUE);
+	OutputLine(NULL, "絶対絶対これは萌え業界の鉄則だあああぁあああ！！！",
+		   NULL, "Questa è una regola del moe che non dev'essere infranta per nessun motivooooo!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlaySE( 0, "s_Kyupiin", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100020", 256, TRUE);
+	OutputLine(NULL, "　いいかよく聞けモンキーども。",
+		   NULL, "Ascoltatemi bene, scimmioni.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100021", 256, TRUE);
+	OutputLine(NULL, "ホモサピエンスと動物の違いは何か。",
+		   NULL, " Qual è la differenza tra homo sapiens e gli altri animali?", Line_WaitForInput);
+	PlaySE( 0, "wa_011", 56, 64 );
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100022", 256, TRUE);
+	OutputLine(NULL, "そう、衣服の着用だ。",
+		   NULL, " Esatto! Indossare i vestiti!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100023", 256, TRUE);
+	OutputLine(NULL, "つまりヒトは衣服があって初めてヒトなのだ！！！",
+		   NULL, " Gli esseri umani senza vestiti sono alla stregua degli animali!!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	PlaySE( 0, "wa_007", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100024", 256, TRUE);
+	OutputLine(NULL, "　それを全部脱がすことでしか欲情できない貴様らはヒト以下！！",
+		   NULL, "Se vi eccita vedere una ragazza completamente nuda, allora non siete niente più che animali!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100025", 256, TRUE);
+	OutputLine(NULL, "　動物と同じだあああぁ！！",
+		   NULL, " Andate a mangiare le radici nella foresta, forza!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100026", 256, TRUE);
+	OutputLine(NULL, "　貴様全員を矯正するッ！！",
+		   NULL, " Adesso ci penso io a darvi una lezione!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100027", 256, TRUE);
+	OutputLine(NULL, "　歯を食いしばれええぇええぇえ！！！」",
+		   NULL, " Stringete bene i dentiiiiiiii!!!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100028", 256, TRUE);
+	OutputLine(NULL, "「先ほどＡＶの脱衣シーンを引き合いに出したな。",
+		   NULL, "\"Prima parlavate di film porno, giusto?", Line_WaitForInput);
+	PlaySE( 0, "wa_012", 56, 64 );
+
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100029", 256, TRUE);
+	OutputLine(NULL, "例えばここに「コスプレＨビデオ」があったとする。",
+		   NULL, " Facciamo finta che troviate un video di porno in cosplay.", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100030", 256, TRUE);
+	OutputLine(NULL, "コスプレと一言に言ってもその裾野は広すぎる。",
+		   NULL, " La definizione di 'cosplay' è troppo ampia.", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100031", 256, TRUE);
+	OutputLine(NULL, "それについて貴様らに講義することは、Ｂ−２９から落下傘で降りてきたヤンキーどもに大和魂を一から説明するより困難この上極まりない！！",
+		   NULL, "Provare a discutere di tale argomento è come cercare di spiegare lo spirito di Yamato a quegli yankee che si paracadutavano giù dai loro B-29!!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100032", 256, TRUE);
+	OutputLine(NULL, "　だからここでは最も普及していると思われる制服系で説明することとする！！",
+		   NULL, " Ecco perché, mi limiterò all'esponente di spicco della categoria: le uniformi scolastiche!!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100033", 256, TRUE);
+	OutputLine(NULL, "　制服系の御三家と言えば何か！！！",
+		   NULL, "Quali sono le tre grandi branche in cui possiamo categorizzare le uniformi scolastiche?!?!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 400 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "答えてみろ！！",
+		   NULL, " Rispondetemi!!", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog005()
+{
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100040", 256, TRUE);
+	OutputLine(NULL, "おいノッポ！！お前は制服だ！",
+		   NULL, " Tu, quello alto!! Tu scegli le uniformi regolari!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100041", 256, TRUE);
+	OutputLine(NULL, "デブ！お前は体操服、",
+		   NULL, " Quello grasso prende le uniformi da ginnastica.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1400 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そしてチビはスク水だ！！！",
+		   NULL, " E quello basso invece si aggiudica i costumi da bagno scolastici!!!", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100044", 256, TRUE);
+	OutputLine(NULL, "ではお前らの望む衣装が登場するＨビデオがここにあるぞ、",
+		   NULL, "Immaginiamo che troviate un video porno con una ragazza che indossa il vostro cosplay preferito.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "あると思え、",
+		   NULL, " Usate bene l'immaginazione.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 600 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "あると信じろ気合を入れろ！！",
+		   NULL, " Metteteci grinta!!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100045", 256, TRUE);
+	OutputLine(NULL, "返事は押忍かサーイエッサーだ！！！",
+		   NULL, " Rispondete 'Sissignore' quando avete finito!!!", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "s_daidageki", 56, 64 );
+	DrawScene("background/furiker_a", 100 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/mati4", 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100046", 256, TRUE);
+	OutputLine(NULL, "馬鹿者それでも軍人かッ！！！！",
+		   NULL, "Siete bamboccioni o soldati?!", Line_WaitForInput);
+	Wait( 500 );
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100047", 256, TRUE);
+	OutputLine(NULL, "　よおし描けたようだな次に進むぞ。",
+		   NULL, " Bene. Ora che l'avete immaginato, andiamo avanti.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "wa_012", 56, 64 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100048", 256, TRUE);
+	OutputLine(NULL, "　それらの萌え衣装が、貴様らの馬鹿げた欲情に従い一糸纏わぬ姿にひん剥かれたと思うがいい、",
+		   NULL, "Immaginate che la ragazza venga spogliata completamente del cosplay a causa del vostro stupido desiderio carnale.", Line_WaitForInput);
+	PlaySE( 0, "wa_007", 56, 64 );
+	OutputLine(NULL, "だがおいお前らよく考えろ！！！",
+		   NULL, " Ecco perché vi ho detto di pensare bene!!!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "全部脱いだらもうそりゃコスプレＨじゃないぞッ？！？！",
+		   NULL, " Se le togliete i vestiti, non è più cosplay, giusto?!?!", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "wa_006", 56, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100051", 256, TRUE);
+	OutputLine(NULL, "最近そういう詐欺紛いなＡＶが増えているが実に嘆かわしい！！",
+		   NULL, "Negli ultimi tempi, questo genere di video si sta diffondendo a macchia d'olio, e la trovo una cosa disdicevole!", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "服を全部剥いだらもうそれは文明人ではない、動物だ！！",
+		   NULL, "Gli esseri umani sono diversi dagli animali perché indossano i vestiti!!", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "wa_005", 56, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100053", 256, TRUE);
+	OutputLine(NULL, "全裸にしか欲情できない貴様らは犬、猿、雉だ！！",
+		   NULL, "Se sono solo le ragazze nude a eccitarvi, allora siete alla pari dei cani, delle scimmie e dei fagiani!", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100056", 256, TRUE);
+	OutputLine(NULL, "　ちなみに最近の東西雪解けに従いロシア系ＡＶが大量に上陸しているな。",
+		   NULL, "A tale riguardo, da quando è finita la Guerra Fredda si stanno diffondendo un sacco di video porno russi.", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "s_furu", 56, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 56, 64 );
+	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100057", 256, TRUE);
+	OutputLine(NULL, "そんなことも知らんのか愚か者！！",
+		   NULL, "Non sapete nemmeno questo?!", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps2/01/150100058", 540, TRUE);
+	OutputLine(NULL, "制服系とロシア系を組み合わせたロシア美少女女子高生などという、ゲッター２が抜けて三神合体できないような水と油な組み合わせが出ているようだが、本官は断じて認めたりはしないぞッ！！！",
+		   NULL, "Ho sentito parlare di un genere chiamato 'ragazze russe in uniforme scolastica', ma non lo accetterò mai! È come voler combinare Getter 2 unendo i pezzi di Golion!!!", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100060", 256, TRUE);
+	OutputLine(NULL, "毛唐に日本の和の心など分かりはしない！！！",
+		   NULL, "Quegli stupidi barbari pelosi non capiranno mai l'essenza dello spirito giapponese!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100061", 256, TRUE);
+	OutputLine(NULL, "貴様ら聞いているのか、",
+		   NULL, " Mi state ascoltando sì o no?!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1400 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "軟弱スルメどもがああぁ！！！",
+		   NULL, " Razza di patetiche amebe!!!", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "wa_005", 56, 64 );
+	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100062", 256, TRUE);
+	OutputLine(NULL, "歯を食いしばれ、今日は徹底的にしごく！！！",
+		   NULL, " Tenete stretti i denti perché oggi vi farò a pezzi!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100063", 256, TRUE);
+	OutputLine(NULL, "貴様らが自分の妄想でご飯三杯行けるまで今日は寝られないと思ええ！！！",
+		   NULL, " Non vi manderò a dormire finché non avrete compreso appieno cosa sia la cultura moe!!!", GetGlobalFlag(GLinemodeSp));
+}

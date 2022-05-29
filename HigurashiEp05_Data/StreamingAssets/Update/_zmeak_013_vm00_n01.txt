@@ -1,0 +1,30 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500164", 256, TRUE);
+	OutputLine(NULL, "「………園崎本家としては、…詩音さんがご自分でけじめを付けられたので、これで決着とするそうです。",
+		   NULL, "\"...... poiché ha pagato il prezzo delle sue azioni, la famiglia Sonozaki ha deciso di chiudere un occhio sulla vicenda...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500165", 256, TRUE);
+	OutputLine(NULL, "……聖ルチーア学園には退学届が出されます。",
+		   NULL, " verrà fatta ritirare dall'Accademia Santa Lucia", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500166", 256, TRUE);
+	OutputLine(NULL, "詩音さんは興宮の学校に編入になるそうです。」",
+		   NULL, " e proseguirà gli studi in una scuola di Okonomiya.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601069", 256, TRUE);
+	OutputLine(NULL, "「……想像してたより待遇がよくて驚いてます。",
+		   NULL, "\"... mi sta trattando meglio di quanto mi aspettassi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601070", 256, TRUE);
+	OutputLine(NULL, "三角木馬くらいは覚悟してたのに。」",
+		   NULL, " Credevo che mi avrebbe presa a frustate.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

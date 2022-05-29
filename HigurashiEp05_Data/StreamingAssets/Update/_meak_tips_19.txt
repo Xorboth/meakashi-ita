@@ -1,0 +1,158 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 1000 );
+	PlayBGM( 1, "suzu", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手梨花。",
+		   NULL, "Rika Furude.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手家頭首だが、重要な会合に席を持ちながらも、多くの場合、出席していない。",
+		   NULL, "Era la leader della famiglia Furude, ma non partecipava quasi mai agli incontri più importanti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　出席しても、とくに発言が問われるわけでもないので、事実上、空席扱いを受けているポストだ。",
+		   NULL, "Se anche partecipava, nessuno chiedeva la sua opinione sull'argomento, quindi poco importava se fosse presente o meno.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手家には、八代続けて第一子が女児ならば、その子はオヤシロさまの生まれ変わりであるとする言い伝えがあるらしく、",
+		   NULL, "Una leggenda narra che se la nuova nata all'interno della famiglia Furude è una femmina per l'ottava volta di fila, allora quest'ultima bambina diverrà la reincarnazione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鷹野さんの研究では、彼女がそれに当たる可能性が極めて高いという。",
+		   NULL, "In base alle ricerche di Takano-san, è molto probabile che Rika Furude fosse l'ottava femmina in successione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かに宗教的なシンボルとしての彼女の求心力は異常なほど高く、オヤシロさま崇拝の妄信者であるほど彼女を神聖視している。",
+		   NULL, "Di certo, è sempre stata un'icona di grande rilievo per quanto riguarda il culto di Oyashiro-sama. Ci sono molti anziani che la veneravano come una divinità.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 1 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな宗教的象徴で、アイドル的な古手梨花が刺客だった事実は、あまりに衝撃的だ。",
+		   NULL, "Motivo per cui è scioccante pensare che una bambina benvoluta come Rika Furude potesse essere l'assassina.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ありえない。",
+		   NULL, "Non riesco ancora a crederci.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　不自然すぎる。",
+		   NULL, "È troppo assurdo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　刺客なんて真似事は下っ端がやることで、古手梨花のようなＶＩＰがやることじゃない。",
+		   NULL, "Di solito, le persone importanti come Rika Furude non sono i tipi da commettere crimini o, addirittura, omicidi.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　一番自然な想像は、…あれは古手梨花でなく、瓜二つな別の存在だったというもの。",
+		   NULL, "L'ipotesi più naturale che mi viene in mente... è che quella non fosse davvero Rika Furude, ma una sorta di doppione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの刺客である彼女の動きは、相当の喧嘩慣れを感じた。",
+		   NULL, "Dal modo in cui si muoveva, sembrava un'esperta di combattimento ravvicinato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ずっと年上で体躯も全然違う私に、何の怯みもなく立ち向かうなんてこと自体、普通じゃ考えられない。",
+		   NULL, "Non è normale che una piccoletta come quella provi a gettare al tappeto un avversario più grande di lei senza alcuna esitazione.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私がスタンガンを携帯していたから返り討ちにしただけであって。",
+		   NULL, "Aver portato la stun gun con me è stato un puro colpo di fortuna.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もしスタンガンがなかったら、あの台所の立ち回りはどうなっていたかわからない。",
+		   NULL, "Se non l'avessi avuta, non so cosa sarebbe successo in quella cucina.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう。",
+		   NULL, "Già.", Line_WaitForInput);
+	OutputLine(NULL, "刺客は、見掛けよりずっと優秀だった。",
+		   NULL, " Era molto più abile ed esperta di quanto sembrasse.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手梨花は、刺客としての訓練を受けていた？？",
+		   NULL, "È davvero possibile che Rika Furude fosse stata addestrata ad agire come un'assassina??", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それとも古手梨花の影武者がいて、それが刺客としてやってきた？？",
+		   NULL, "Oppure è stato davvero un sosia ad agire per suo conto??", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの奇怪な注射器も含めて、謎だらけの存在。",
+		   NULL, "Niente ha il minimo senso, a cominciare da quella siringa dall'aria pericolosa.", Line_WaitForInput);
+	OutputLine(NULL, "正体不明。",
+		   NULL, " Non conosco la sua vera identità.", Line_WaitForInput);
+	OutputLine(NULL, "理解不能。",
+		   NULL, " Non conosco il motivo per cui l'ha fatto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　存在自体が説明できない。",
+		   NULL, "Non so nemmeno che cosa fosse.", Line_WaitForInput);
+	OutputLine(NULL, "…まるで、妖怪か何かのよう。",
+		   NULL, " Proprio come un fantasma.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎お魎はこいつの「存在」を把握していたのか…？",
+		   NULL, "Oryou Sonozaki era a conoscenza di questa \"cosa\"...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この雛見沢という村には何が潜んでいるんだ。",
+		   NULL, "Che cosa si nasconde dietro le quinte di Hinamizawa?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が底だと信じる雛見沢の暗部は、",
+		   NULL, "Il buio delle tenebre...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私の想像を超えて深すぎる。",
+		   NULL, " è molto più pesto di quanto pensassi.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

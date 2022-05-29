@@ -1,0 +1,118 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 400 );
+	PlayBGM( 0, "demo_48khz", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この時点での悟史くんの様子は本当に気の毒なものだった。",
+		   NULL, "Satoshi-kun aveva una pessima cera.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　家に帰れば叔母と沙都子の喧嘩・苛めに割って入って精神をすり切らせ。",
+		   NULL, "Tornato a casa, non faceva altro che mediare le liti tra la zia e Satoko, cosa che prosciugava tutta la sua forza mentale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　にもかかわらず、毎日バイトに出掛け、肉体までもすり切らせ…。",
+		   NULL, "Per la forza fisica, invece, ci pensava il lavoro part-time che faceva ogni giorno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　仲間との接触はほとんどなくなり、学校でも休み時間には、机の上に突っ伏して寝ているか、",
+		   NULL, "Ormai non parlava più nemmeno con i suoi compagni di classe. Dormiva sul banco durante la ricreazione", Line_WaitForInput);
+	OutputLine(NULL, "どこかに姿をくらましているかのどっちかだったらしい。",
+		   NULL, " e andava a mangiare altrove durante la pausa pranzo.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　おっとりとしていた、在りし日の悟史くんを思うと、あまりに痛々しい。",
+		   NULL, "È sempre stato così gentile. Mi doleva il cuore a vederlo in quello stato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そこにさらに「オヤシロさまの祟り」が降りかかってきたのだから、その心労は並大抵ではなかったろう。",
+		   NULL, "Per di più, aveva persino la maledizione di Oyashiro-sama a cui pensare. Non gli era rimasto più un briciolo di energie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまの祟りとは、つまり、悟史くんを今年の犠牲者にしようという連中の「監視」のことに他ならない。",
+		   NULL, "La maledizione di Oyashiro-sama non è altro che una forma di controllo attuata da coloro che avevano intenzione di rendere Satoshi-kun la vittima di quell'anno.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ならば。",
+		   NULL, "Ciò significa", Line_WaitForInput);
+	OutputLine(NULL, "この年の犠牲者となるもうひとり。",
+		   NULL, " che anche l'altra vittima si trovava nella stessa situazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり北条の叔母についても監視があったということになる。",
+		   NULL, "Ovvero, che anche la zia di Satoshi-kun doveva essere stata posta sotto sorveglianza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　叔母もまた、監視の気配を感じていたのだろうか？",
+		   NULL, "Si era accorta di qualcosa, forse?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いや、叔母に限らない。",
+		   NULL, "E non valeva solo per lei.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　過去の犠牲者たちは皆、そういう監視の目があったのだろうか？",
+		   NULL, "Anche le vittime degli incidenti degli anni precedenti erano state tenute sotto controllo prima di fare quelle fini orribili?", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんの「祟り」が「監視」であったことを立証するためにも、調べた方がいい。",
+		   NULL, "Devo indagare più a fondo e dimostrare che la maledizione non è altro che una forma di sorveglianza.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「監視」か、",
+		   NULL, "Sorveglianza,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "「被害妄想」か、",
+		   NULL, " mania di persecuzione...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……本当に「祟り」",
+		   NULL, " o una vera maledizione", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "なのか。",
+		   NULL, "...?", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE( 0, "s_page", 56, 64 );
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

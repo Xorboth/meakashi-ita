@@ -1,0 +1,209 @@
+void main()
+{
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("black", 300 );
+	PlayBGM( 0, "demo_48khz", 56, 0 );
+	SetSpeedOfMessage( TRUE, 0 );
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和５８年６月。",
+		   NULL, "Giugno 1983.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ＸＸ県鹿骨市雛見沢村で、連続失踪事件が発生した。",
+		   NULL, "Una serie di sparizioni è avvenuta nel villaggio di Hinamizawa, città di Shishibone, prefettura X X.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　容疑者は、園崎魅音（１Ｘ歳）",
+		   NULL, "L'indagata principale è Mion Sonozaki (1X anni).", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
+		   NULL, "È sospettata di aver rapito cinque abitanti di Hinamizawa tra il 19 e il 21 giugno (Oryou Sonozaki, Shion Sonozaki, Kiichirou Kimiyoshi, Rika Furude e Satoko Houjou), e di averli successivamente uccisi.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　事件は当初、情報不足のため初動捜査で遅れをとったが、偶然的、電撃的に解決した。",
+		   NULL, "Le indagini preliminari sull'incidente erano state rallentate per insufficienza di prove, ma la risoluzione del caso è avvenuta per pura e stupefacente coincidenza.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
+	DrawScene("background/so1", 400 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "２２日午前中、園崎邸前を巡回していた警邏車両は邸内よりの悲鳴を聞き、緊急措置として邸内へ突入。",
+		   NULL, "La mattina del 22, una pattuglia posta nei pressi della proprietà Sonozaki ha sentito delle grida provenire dall'interno e ha fatto irruzione, seguendo le procedure di emergenza.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	DrawScene("background/so2", 400 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　失踪中の容疑者の妹（園崎詩音）とクラスメート２名（前原圭一・竜宮礼奈）を保護した。",
+		   NULL, "Gli agenti hanno messo in sicurezza la sorella minore della sospettata (Shion Sonozaki) e due dei suoi compagni di classe (Keiichi Maebara e Rena Ryuugu), tutti considerati scomparsi fino a quel momento.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　容疑者は現場より逃走する。",
+		   NULL, " La sospettata è scappata.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、拷問室からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。",
+		   NULL, "All'interno del sotterraneo nei pressi della residenza Sonozaki, che si crede sia stato il teatro degli omicidi, sono stati rinvenuti capelli, porzioni di pelle e sangue appartenenti ai dispersi (Oryou Sonozaki, Kiichirou Kimiyoshi, Rika Furude e Satoko Houjou).", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　拷問室内で失踪者たちが拷問を受けたものと断定した。",
+		   NULL, "Abbiamo concluso che gli scomparsi siano stati torturati nella sala delle torture.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ただし、その遺体は依然、発見されていない。",
+		   NULL, "Tuttavia, i loro resti non sono stati ancora ritrovati.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　監禁されていたクラスメートの証言から、監禁現場となった、園崎邸内の離れ地下にあるものと見て捜索を続けているが、容疑者の逃亡ルート共々、発見には未だ至っていない。",
+		   NULL, "Su sollecito di uno dei sopravvissuti, abbiamo continuato le ricerche nel sotterraneo della famiglia Sonozaki, ovvero dov'erano state imprigionate le vittime, credendo di riuscire a ritrovare i corpi. Non è ancora chiaro come la sospettata si sia data alla fuga.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、",
+		   NULL, "Inoltre, le investigazioni proseguono in quanto ritenuta partecipante alla serie di morti misteriose avvenute negli ultimi anni, nella speranza che possa essere di aiuto per la risoluzione al caso.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎魅音が直接、または間接的に関わったという証拠は発見されていない。",
+		   NULL, "... ma non è stata trovata alcuna prova che Mion Sonozaki, direttamente o indirettamente, ne sia coinvolta.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　事件の動機には今もなお不明な点が多く、また、園崎家、雛見沢村住民の極度の非協力もあり、その解明には膨大な時間を要することが予想される。",
+		   NULL, "Vi sono ancora molti punti oscuri sul movente dietro agli omicidi, in quanto i residenti di Hinamizawa e la famiglia Sonozaki non hanno offerto la loro cooperazione nelle indagini. È previsto che ci vorrà ancora tempo per chiarire la vicenda.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ke1", 1000 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　地域に詳しい地元警察の見解では、雛見沢村内の信仰に対する冒涜行為を巡る、内部懲罰、リンチ事件ではないかと見ている。",
+		   NULL, "L'opinione di un agente locale, conoscitore della regione, è che si sia trattato di un linciaggio—una forma di punizione interna contro gli atti sacrileghi perpetrati ai danni delle convinzioni del villaggio di Hinamizawa.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　地域性に根ざした特殊な事件であることは間違いなく、県警本部は慎重な捜査を命じた。",
+		   NULL, "È chiaro che questi incidenti affondano le loro radici nella regione, e che quindi il dipartimento di polizia della prefettura ha ordinato di investigare con cautela.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/sinryou_sinsatu4", 1000 );
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　容疑者の妹で、もっとも監禁期間の長いと思われる失踪者（園崎詩音）から重要な手掛かりを得られるのではないかと期待したが、",
+		   NULL, "Ci aspettavamo di ottenere informazioni di valore dalla dispersa che crediamo essere stata imprigionata più a lungo, Shion Sonozaki—la sorella minore della sospettata...", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　事件後、精神に重度の後遺症を患い、今日まで正常な事情聴取に応じられる精神状態にない。",
+		   NULL, "... ma la sua psiche è ancora turbata dall'evento, e non si trova in una condizione mentale tale per cui possa rispondere coerentemente alle nostre domande.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 1, "type", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　精神科医は、ショックによる一過性のものと診断したが、その回復の目処は今日でも立っていない。",
+		   NULL, "Lo psichiatra ha concluso che si tratta di una condizione temporanea di shock, ma pare che anche oggi non ci siano stati miglioramenti.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( FALSE, 0 );
+	DrawScene("black", 3000 );
+	FadeFilm( 0, FALSE );
+	FadeOutBGM( 0, 1000, TRUE );
+}

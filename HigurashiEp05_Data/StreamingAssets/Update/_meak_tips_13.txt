@@ -1,0 +1,82 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/so_k1", 1000 );
+	PlayBGM( 0, "z2_hig1", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が地下拷問室と呼んでいたあの場所は、正しくは地下祭具殿と呼ばれているらしい。",
+		   NULL, "La sala delle torture nei sotterranei è chiamata ufficialmente \"magazzino rituale sotterraneo\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ということは、拷問室と祭具殿は同義語だということなのか。",
+		   NULL, "Ma allora, \"sala delle torture\" e \"magazzino rituale\" si riferiscono alla stessa cosa?", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんの説では、明治以降も綿流しを始めとする血生臭い風習は、御三家に密かに引き継がれているという。",
+		   NULL, "Secondo quanto dice Takano-san, le Tre Famiglie hanno continuato a ereditare le tradizioni cruente e sanguinose, Watanagashi compreso, sin dal periodo Meiji.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、許されるならばいつでもその儀式を執り行える準備があるのだとか。",
+		   NULL, "Per questo, i rituali sono sempre pronti per essere eseguiti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祭具、つまり祭る（祀る）という言葉の対に拷問がある以上、",
+		   NULL, "La forma in cui i rituali avvengono richiama costantemente torture e metodi crudeli,", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢の源流に、人間を虐め殺す文化があることは否定できない。",
+		   NULL, " quindi è innegabile che le tradizioni di Hinamizawa affondino le radici in un gran numero di sacrifici umani.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんの説は正しい。",
+		   NULL, "La teoria di Takano-san è corretta.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして象徴的な祭具殿と違い、園崎本家の地下祭具殿は確かに常時使用可能な状態で維持されていた。",
+		   NULL, "A differenza degli strumenti usati solo per fare scena, quelli che si trovano all'interno dei sotterranei di casa Sonozaki sono sempre ben tenuti e tirati a lucido.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここにおいても鷹野さんの説は正しい。",
+		   NULL, "Anche qui, Takano-san ha indovinato.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　公由家の倉は知らないが、園崎家、古手家がこうして「祭具」を祀るのだから、近い規模の物を秘蔵しているに違いない。",
+		   NULL, "Dato che sia la famiglia Sonozaki che quella Furude hanno dei magazzini rituali, allora anche la famiglia Kimiyoshi deve averne uno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう、現代の御三家にも脈々と、残酷な風習が受け継がれているのだ。",
+		   NULL, "In fondo, quegli usi e costumi violenti vengono ancora passati di generazione in generazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この呪われた村で、村ぐるみで今も奇怪な何かが行なわれている事実に備えろ…。",
+		   NULL, "Farei meglio a non dimenticare mai che, tra le case di questo villaggio maledetto, ancora oggi si tengono segretamente eventi misteriosi e occulti...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

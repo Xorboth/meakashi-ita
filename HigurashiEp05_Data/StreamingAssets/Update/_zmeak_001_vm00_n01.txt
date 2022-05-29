@@ -1,0 +1,84 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600025", 256, TRUE);
+	OutputLine(NULL, "「そっか、お姉はもう実家じゃないんだったね。",
+		   NULL, "\"Giusto. Lei non vive più con i nostri genitori.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600026", 256, TRUE);
+	OutputLine(NULL, "雛見沢の鬼婆のとこだっけ？」",
+		   NULL, " Adesso vive con la vecchia a Hinamizawa, vero?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600028", 256, TRUE);
+	OutputLine(NULL, "「そ。",
+		   NULL, "\"Sì.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600029", 256, TRUE);
+	OutputLine(NULL, "……あの鬼婆と朝から晩まで顔を合わせてりゃ、少しは変わるでしょ。」",
+		   NULL, " ... penso che vedere la vecchia dalla mattina alla sera sia sufficiente per cambiare chiunque.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500043", 256, TRUE);
+	OutputLine(NULL, "「詩音さんを聖ルチーア学園に入学させる決定は、園崎本家頭首が下したものです。",
+		   NULL, "\"La decisione di mandarla all'Accademia Santa Lucia è stata presa dal capofamiglia dei Sonozaki.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500044", 256, TRUE);
+	OutputLine(NULL, "…詩音さんはその学園を抜け出した。",
+		   NULL, " ... lei è scappata dalla suddetta scuola...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500045", 256, TRUE);
+	OutputLine(NULL, "…どういうことか、お分かりですね。」",
+		   NULL, " ... capisce cosa intendo dire?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600041", 256, TRUE);
+	OutputLine(NULL, "「鬼婆の決めた学校が私に合わなかったってだけでしょ。」",
+		   NULL, "\"La scuola che la vecchia ha scelto non faceva per me, tutto qui.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600044", 256, TRUE);
+	OutputLine(NULL, "「鬼婆の耳に入ったらどうなるか、ってことー？",
+		   NULL, "\"Sei in pensiero per cosa succederà quando la vecchia lo verrà a sapere?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600045", 256, TRUE);
+	OutputLine(NULL, "　………たはは、まぁ、そりゃあヤバイことにはなるかもね。」",
+		   NULL, " ...... ahahahah, sì, potrebbe essere un problema.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500054", 256, TRUE);
+	OutputLine(NULL, "「その時は詩音さんも、簀巻きにされて鬼ヶ淵沼に放り込まれるくらいの覚悟をして下さいよ？",
+		   NULL, "\"Lei piuttosto, dovrebbe prepararsi a essere avvolta in un futon e gettata nella palude di Onigafuchi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500055", 256, TRUE);
+	OutputLine(NULL, "　あぁ、あるいは本家離れの拷問部屋送りかも。」",
+		   NULL, " Ah, forse la spediranno nella sala delle torture situata nel giardino.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600068", 256, TRUE);
+	OutputLine(NULL, "「鬼婆はとっくに更年期障害で、正常な思考なんか出来なくなってんの！",
+		   NULL, "\"Ormai la vecchia ha superato la menopausa da un pezzo, ecco perché non riesce a ragionare lucidamente!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600069", 256, TRUE);
+	OutputLine(NULL, "　あのダム戦争の興奮で、頭がイカれちゃって、まだその時の興奮が抜け切ってないんじゃないかな。ったく！」",
+		   NULL, " Il conflitto della diga le ha dato alla testa e ancora non ne ha superato la tensione. Accidenti a lei!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

@@ -1,0 +1,106 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "03_cele", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　昭和５７年のオヤシロさまの祟りの渦中にある時は、私は新しい情報に一喜一憂し、その度に自分の頭の中の仮説をひっくり返した。",
+		   NULL, "Durante la confusione scaturita durante la maledizione di Oyashiro-sama del 1982, sono stata bombardata di informazioni su Satoshi-kun da ogni parte, al punto da cambiare le mie teorie su base giornaliera.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	DrawBustshot(9, "notebook/nort_mono1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもそれはものすごく自分に負担になることで。",
+		   NULL, "Questo fatto era diventato per me un peso insostenibile.", Line_WaitForInput);
+	OutputLine(NULL, "……それだけのことでも私を十分に疲弊させていった。",
+		   NULL, "... ed è stato abbastanza per sfiancarmi del tutto.", Line_Normal);
+	ClearMessage();
+	DrawBustshot(9, "notebook/nort_mono2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　疲労というのは残酷だけど、とてもやさしい包容力があって。",
+		   NULL, "Facevo una gran fatica ma, al tempo stesso, è stato un buon modo per scendere a patti con quel che era successo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	DrawBustshot(9, "notebook/nort_mono3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　怒りや悲しみ、疑いなどの、抱くだけでも私を衰えさせていく感情を、少しずつ少しずつ、眠らせていく。",
+		   NULL, "Poco alla volta, mi ha aiutato a disfarmi della rabbia, della tristezza e dei dubbi che mi avevano distrutto.", Line_Normal);
+	ClearMessage();
+	DrawBustshot(9, "notebook/nort_mono4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんのことを絶対に忘れない。",
+		   NULL, "\"Non dimenticherò mai Satoshi-kun.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	DrawBustshot(9, "notebook/nort_mono5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　忘れて生きていこうなんて思わない。",
+		   NULL, "\"Non cercherò mai di lasciarmi il passato alle spalle.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	DrawBustshot(9, "notebook/nort_mono6", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう常に心の中で念じ続けている。",
+		   NULL, "Non facevo altro che ripetere queste frasi nella mia testa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	DrawBustshot(9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　念じ続けることで、…悟史くんの思い出を眠らせないように、",
+		   NULL, "Le ripetevo e le ripetevo... per evitare che i miei ricordi di Satoshi-kun potessero svanire insieme a lui.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ずっと、",
+		   NULL, " Ancora,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ずっと。",
+		   NULL, " e ancora.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　悟史くんとの楽しい思い出と一緒に、",
+		   NULL, "Per il bene dei miei ricordi felici con Satoshi-kun...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……恐ろしい感情も、",
+		   NULL, " ... per la paura,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "悲しい感情も、",
+		   NULL, " per la disperazione,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ずっと、ずっと。",
+		   NULL, " ancora e ancora.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	Wait( 1000 );
+	DrawScene("black", 1000 );
+}

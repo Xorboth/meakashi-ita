@@ -1,0 +1,69 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は少し騒ぎすぎて疲れたせいか、畳の上でぐったりとしていた。",
+		   NULL, "Forse ho esagerato un po' con la confusione, mi sono sdraiata sul pavimento in tatami.", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 15, "sprite/kasa_2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawScene("background/ima1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　葛西が、車に乗れますか？",
+		   NULL, "Kasai mi domanda se voglio entrare in macchina,", Line_WaitForInput);
+	OutputLine(NULL, "と聞いてきたので、もう動きたくないと言い返してやった。",
+		   NULL, " ma gli rispondo che non voglio più muovere nemmeno un muscolo.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　せっかくドンちゃん騒ぎで忘れかけてた、あの祭具殿での薄気味悪さが…再び戻ってくるのを感じた。",
+		   NULL, "Sento tornare a galla l'inquietudine del magazzino rituale... proprio quando ero riuscita a scrollarmela di dosso grazie ai festeggiamenti di ieri sera.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、疲れてひたすら眠くって、寝る身支度なんてしないで布団に潜り込んだから。",
+		   NULL, "Ma dato che ero troppo stanca e assonnata per prepararmi a dormire, l'avevo ancora con me.", Line_Normal);
+	ClearMessage();
+	DrawScene("background/rouka1_02", 400 );
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601468", 256, TRUE);
+	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
+		   NULL, "\"E Tomitake-san, invece? Si è dilaniato la gola con le proprie mani o sbaglio?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601469", 256, TRUE);
+	OutputLine(NULL, "　意識をおかしくさせるような怪しいお薬でも注射したの？",
+		   NULL, " Gli avete fatto una qualche iniezione che l'ha fatto impazzire?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601470", 256, TRUE);
+	OutputLine(NULL, "　それとも、そういう死に方に見せるような道具でもあるわけ？」",
+		   NULL, " Oppure esiste uno strumento di tortura appositamente con questo scopo?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601490", 256, TRUE);
+	OutputLine(NULL, "「でも、バァさんの独断だとしたって。",
+		   NULL, "\"Se anche decide da sola,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601491", 256, TRUE);
+	OutputLine(NULL, "アイツはあんたを介してやり取りしてるわけでしょ？",
+		   NULL, " la nonna ti usa in sua vece per occuparti di diverse cose, no?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601492", 256, TRUE);
+	OutputLine(NULL, "　そのあんたが何も知らないなんてあるはず、」",
+		   NULL, " Davvero non ne sai niente?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

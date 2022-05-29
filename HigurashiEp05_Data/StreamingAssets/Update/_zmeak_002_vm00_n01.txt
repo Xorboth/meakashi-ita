@@ -1,0 +1,45 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300002", 256, TRUE);
+	OutputLine(NULL, "「そ、",
+		   NULL, "\"Qu-", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………その声は！！",
+		   NULL, "questa voce!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300003", 256, TRUE);
+	OutputLine(NULL, "　でもそんなはずは…！",
+		   NULL, " Non può essere...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300004", 256, TRUE);
+	OutputLine(NULL, "　詩音は聖ルチーア学園に幽閉されてるはず…！！",
+		   NULL, " Shion dovrebbe ancora essere rinchiusa all'Accademia Santa Lucia...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300005", 256, TRUE);
+	OutputLine(NULL, "　そんなはずはない……！」",
+		   NULL, " Non puoi essere lei...!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600198_1", 256, TRUE);
+	OutputLine(NULL, "「叔父さん、私の体のラインが未だ幼児体型に見えるってんなら、",
+		   NULL, "\"Zio, se ti sembra che il mio corpo non sia ancora sviluppato,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "目医者行くか、",
+		   NULL, " dovresti andare dall'oculista.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ロリコンって呼ばれたいかのどちらかを選んでもらうことになるんですけど。」",
+		   NULL, " A meno che tu non voglia che ti dia del pedofilo.\"", Line_Normal);
+	ClearMessage();
+}

@@ -1,0 +1,2 @@
+1.0.0 [29-05-2022]:
+ - Prima release pubblica!
