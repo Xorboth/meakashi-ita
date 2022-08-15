@@ -17,11 +17,15 @@ set readmeManual=leggimi_manuale.txt
 
 set assets=sharedassets0.assets
 set assetsWindowsSteamGogMangaGamer=sharedassets0.assets
+set assetsWindowsOldSteamGogMangaGamer=Windows-Old-Steam-GOG-MG-5.5.3p1.languagespecificassets
 set assetsLinuxMacOsSteamGogMangaGamer=LinuxMac-Steam-GOG-MG-5.5.3p3.languagespecificassets
+set assetsLinuxMacOsOldSteamGogMangaGamer=LinuxMac-Old-Steam-GOG-MG-5.5.3p1.languagespecificassets
 
 set output07th=meakashi_ita_07th_mod_installer.7z
 set outputWindowsSteamGogMangaGamer=meakashi_ita_windows_steam_gog_mg_%version%.7z
+set outputWindowsOldSteamGogMangaGamer=meakashi_ita_windows_old_steam_gog_mg_%version%.7z
 set outputLinuxMacOsSteamGogMangaGamer=meakashi_ita_linux_macos_steam_gog_mg_%version%.7z
+set outputLinuxMacOsOldSteamGogMangaGamer=meakashi_ita_linux_macos_old_steam_gog_mg_%version%.7z
 
 
 ::
@@ -40,7 +44,9 @@ md .\%outputFolder%
 
 del .\%outputFolder%\%output07th%
 del .\%outputFolder%\%outputWindowsSteamGogMangaGamer%
+del .\%outputFolder%\%outputWindowsOldSteamGogMangaGamer%
 del .\%outputFolder%\%outputLinuxMacOsSteamGogMangaGamer%
+del .\%outputFolder%\%outputLinuxMacOsOldSteamGogMangaGamer%
 
 
 ::
@@ -69,11 +75,28 @@ copy ..\%readmeManual% .\%tempFolder%\%readme%
 
 del .\%tempFolder%\%higurashiData%\%assets%
 del .\%tempFolder%\%higurashiData%\%assetsWindowsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsWindowsOldSteamGogMangaGamer%
 del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsOldSteamGogMangaGamer%
 
 copy ..\%higurashiData%\%assetsWindowsSteamGogMangaGamer% .\%tempFolder%\%higurashiData%\%assets%
 
 7za a .\%outputFolder%\%outputWindowsSteamGogMangaGamer% .\%tempFolder%\* -ssw -mx9
+
+
+::
+:: Create Windows Old Steam/GOG/MangaGamer manual archive
+::
+
+del .\%tempFolder%\%higurashiData%\%assets%
+del .\%tempFolder%\%higurashiData%\%assetsWindowsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsWindowsOldSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsOldSteamGogMangaGamer%
+
+copy ..\%higurashiData%\%assetsWindowsOldSteamGogMangaGamer% .\%tempFolder%\%higurashiData%\%assets%
+
+7za a .\%outputFolder%\%outputWindowsOldSteamGogMangaGamer% .\%tempFolder%\* -ssw -mx9
 
 
 ::
@@ -82,11 +105,28 @@ copy ..\%higurashiData%\%assetsWindowsSteamGogMangaGamer% .\%tempFolder%\%higura
 
 del .\%tempFolder%\%higurashiData%\%assets%
 del .\%tempFolder%\%higurashiData%\%assetsWindowsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsWindowsOldSteamGogMangaGamer%
 del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsOldSteamGogMangaGamer%
 
 copy ..\%higurashiData%\%assetsLinuxMacOsSteamGogMangaGamer% .\%tempFolder%\%higurashiData%\%assets%
 
 7za a .\%outputFolder%\%outputLinuxMacOsSteamGogMangaGamer% .\%tempFolder%\* -ssw -mx9
+
+
+::
+:: Create Linux/MacOS Old Steam/GOG/MangaGamer manual archive
+::
+
+del .\%tempFolder%\%higurashiData%\%assets%
+del .\%tempFolder%\%higurashiData%\%assetsWindowsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsWindowsOldSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsSteamGogMangaGamer%
+del .\%tempFolder%\%higurashiData%\%assetsLinuxMacOsOldSteamGogMangaGamer%
+
+copy ..\%higurashiData%\%assetsLinuxMacOsOldSteamGogMangaGamer% .\%tempFolder%\%higurashiData%\%assets%
+
+7za a .\%outputFolder%\%outputLinuxMacOsOldSteamGogMangaGamer% .\%tempFolder%\* -ssw -mx9
 
 
 ::
