@@ -1,2 +1,6 @@
+1.0.1 [15-08-2022]:
+ - Aggiornata la traduzione, correggendo dei termini ricorrenti tra i vari capitoli e alcuni errori segnalati
+ - Aggiunti sharedassets per alcune vecchie versioni del gioco, correggendo l'errore che ne impediva l'apertura
+
 1.0.0 [29-05-2022]:
  - Prima release pubblica!
