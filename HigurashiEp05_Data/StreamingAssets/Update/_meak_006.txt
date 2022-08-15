@@ -783,7 +783,7 @@ void main()
 	OutputLine(NULL, "　…だが、その指導の仕方に共感する親も、若干だがいる。",
 		   NULL, "... altri, invece, concordano con il suo metodo.", Line_WaitForInput);
 	OutputLine(NULL, "私はどっちだろう？",
-		   NULL, " Da che patre dovrei schierarmi?", Line_WaitForInput);
+		   NULL, " Da che parte dovrei schierarmi?", Line_WaitForInput);
 	OutputLine(NULL, "　後者…と言いたいとこだが、少し保留気味にしておこう。",
 		   NULL, " Uhm... forse i secondi...? Non saprei dire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

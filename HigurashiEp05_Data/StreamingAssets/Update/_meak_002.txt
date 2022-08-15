@@ -1396,7 +1396,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150600178", 540, TRUE);
 	OutputLine(NULL, "「そう言えば、バラバラ殺人なんてのがありましたよね。",
-		   NULL, "\"Ah, a proposito, ci fu anche un omicidio con smembramento, se ben ricordo.", Line_WaitForInput);
+		   NULL, "\"Ah, a proposito, ci fu anche un omicidio dove un uomo fu fatto a pezzi, se ben ricordo.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150600179", 540, TRUE);
 	OutputLine(NULL, "あのクソムカつく現場監督の野郎がバラバラにされたヤツ。",
 		   NULL, " Quello dove il bastardo a capo del cantiere venne ucciso e fatto a pezzi.", Line_WaitForInput);

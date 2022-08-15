@@ -512,7 +512,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601636", 256, TRUE);
 	OutputLine(NULL, "「これまでの祟りの犠牲者はさ、みんなダム戦争の時の戦犯だったわけじゃない？",
-		   NULL, "\"Tutte le vittime degli scorsi anni sono sempre stati legati al conflitto per la diga, giusto?", Line_WaitForInput);
+		   NULL, "\"Tutte le vittime degli scorsi anni sono sempre stati legati alle proteste per la diga, giusto?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601637", 256, TRUE);
 	OutputLine(NULL, "　それが今年はちょいと路線が違う感じですよね。",
 		   NULL, " Ma quest'anno c'è qualcosa di diverso.", Line_WaitForInput);

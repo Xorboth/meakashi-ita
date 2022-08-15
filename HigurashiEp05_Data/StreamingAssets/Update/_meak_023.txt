@@ -2632,7 +2632,7 @@ void main()
 		   NULL, "\"... capisco quello che provi, Kei-chan. Davvero.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602398", 256, TRUE);
 	OutputLine(NULL, "…ダム闘争はとっくの昔に終わったんです。",
-		   NULL, " ... la battaglia per la diga è terminata da anni.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ... le proteste per la diga sono terminate da anni.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

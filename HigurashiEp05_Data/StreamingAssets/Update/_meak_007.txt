@@ -1212,7 +1212,7 @@ void main()
 		   NULL, "\"... non si tratta di fiducia...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200044", 256, TRUE);
 	OutputLine(NULL, "…………私が、経験者だからだと思う。」",
-		   NULL, " ma l'ha fatta perché ci sono passata anch'io.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ma l'ha fatto perché ci sono passata anch'io.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1458,7 +1458,7 @@ void main()
 	OutputLine(NULL, "　心の中にじわ…っと。",
 		   NULL, "Poco alla volta,", Line_WaitForInput);
 	OutputLine(NULL, "……バラバラ殺人、そして北条夫妻の転落事故が二年続いた後に村中で騒がれ、子どもたちの心に深く恐怖を植え込んだ、オヤシロさまの祟りの怖さが蘇っていく。",
-		   NULL, " riaffiora in me il timore della maledizione che pare aver causato la morte dei coniugi Houjou e lo smembramento del capocantiere della diga.", Line_Normal);
+		   NULL, " riaffiora in me il timore della maledizione che pare aver causato la morte dei coniugi Houjou e l'uccisione del capocantiere della diga.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1623,7 +1623,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私は彼女が何を伝えようとしているのか…耳を傾けるだけで精一杯だった。",
-		   NULL, "... mi spremo le memingi e ripeto le sue parole più volte nella mia testa.", Line_Normal);
+		   NULL, "... mi spremo le meningi e ripeto le sue parole più volte nella mia testa.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );

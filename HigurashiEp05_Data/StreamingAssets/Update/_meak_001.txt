@@ -2070,10 +2070,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500020", 256, TRUE);
 	OutputLine(NULL, "「多分元気かと。",
-		   NULL, " La incrocio brevemente solo quando scorto vostro padre ai consigli di famiglia.\"", Line_WaitForInput);
+		   NULL, "\"Suppongo stia bene.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500021", 256, TRUE);
 	OutputLine(NULL, "私も親族会議の席に親父さんをお連れする時に、少しすれ違う程度ですし。」",
-		   NULL, " La incrocio brevemente solo quando scorto vostro padre ai consigli di famiglia.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La incrocio brevemente solo quando scorto vostro padre ai consigli di famiglia.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	//VoiceMatching

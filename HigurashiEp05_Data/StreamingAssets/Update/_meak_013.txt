@@ -2656,7 +2656,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私を脅してもどうにもならないなら。",
-		   NULL, "Se minacciare me era inuntile, allora...", Line_WaitForInput);
+		   NULL, "Se minacciare me era inutile, allora...", Line_WaitForInput);
 	OutputLine(NULL, "…悟史くんの方をどうにかする。",
 		   NULL, "... bisognava \"fare qualcosa\" con Satoshi-kun.", Line_Normal);
 	ClearMessage();

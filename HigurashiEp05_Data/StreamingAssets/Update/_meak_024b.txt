@@ -1649,7 +1649,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家は、確かにお父さんの絡みで、裏の世界に大きな影響力を持つし、実際、ダム戦争中には不法行為で抵抗していた。",
-		   NULL, "La famiglia Sonozaki esercita molta influenza dietro le quinte grazie ai legami di nostro padre. Infatti, fu lui a richiedere di usare mezzi poco ortodossi durante il conflitto della diga.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La famiglia Sonozaki esercita molta influenza dietro le quinte grazie ai legami di nostro padre. Infatti, fu lui a richiedere di usare mezzi poco ortodossi durante le proteste per la diga.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

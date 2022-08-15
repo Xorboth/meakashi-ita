@@ -1390,7 +1390,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんはむくれながら、私に頭を撫でられるままに委ね、少し赤くなりながら俯いていた。",
-		   NULL, "Satoshi-kun aggrotta le sopracciglia e mette il broncio, con le guanche che iniziano poco alla volta a diventare rosse.", Line_WaitForInput);
+		   NULL, "Satoshi-kun aggrotta le sopracciglia e mette il broncio, con le guance che iniziano poco alla volta a diventare rosse.", Line_WaitForInput);
 	OutputLine(NULL, "……あ〜〜ん、こいつカワイイよ〜〜☆",
 		   NULL, " Ahh, che carino〜〜☆.", Line_Normal);
 	ClearMessage();

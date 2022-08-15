@@ -141,7 +141,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一年目の現場監督バラバラ殺人も結構インパクトがあった。",
-		   NULL, "Lo smembramento del primo anno mi ha lasciato un ricordo indelebile.", Line_Normal);
+		   NULL, "L'omicidio brutale del primo anno mi ha lasciato un ricordo indelebile.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
 

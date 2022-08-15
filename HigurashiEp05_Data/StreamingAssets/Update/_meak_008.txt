@@ -1937,7 +1937,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争後も、表立ったいじめはなかったものの、村に非常に居難い雰囲気があったのは間違いない。",
-		   NULL, "Persino dopo la fine del conflitto della diga non fu facile per gli Houjou ritagliarsi uno spazio a Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Persino dopo la fine delle proteste contro la diga non fu facile per gli Houjou ritagliarsi uno spazio a Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

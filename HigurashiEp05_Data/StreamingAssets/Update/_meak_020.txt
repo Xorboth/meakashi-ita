@@ -3424,7 +3424,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎お魎はダム戦争中、結束を容易にするため、常に敵をわかりやすく設定した。",
-		   NULL, "Durante i conflitti per la diga, Oryou Sonozaki ha chiarito l'identità del nemico immediatamente.", Line_Normal);
+		   NULL, "Durante le proteste per la diga, Oryou Sonozaki ha chiarito l'identità del nemico immediatamente.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("background/damu2", "maskup", 1, 0, 300 );
 

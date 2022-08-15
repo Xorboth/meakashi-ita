@@ -589,7 +589,7 @@ void main()
 	PlaySE( 4, "s_z03_haikyo", 56, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私の精神は、ぬめった薄皮を内側から破って脱皮したような感じだった。",
-		   NULL, "Sento come la pelle cadermi di dosso, per lasciare spazio a mia nuova reincarnazione.", Line_Normal);
+		   NULL, "Sento come la pelle cadermi di dosso, per lasciare spazio alla mia nuova reincarnazione.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );

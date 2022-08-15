@@ -1553,7 +1553,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…叔父夫婦がダム戦争中、どういう立場を取っていたにせよ、少なからずのとばっちりがあったはずだ。",
-		   NULL, "... non so che posizioni avessero preso questi due zii durante il conflitto per la diga, ma devono aver subito dei contraccolpi indiretti.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... non so che posizioni avessero preso questi due zii durante le proteste per la diga, ma devono aver subito dei contraccolpi indiretti.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

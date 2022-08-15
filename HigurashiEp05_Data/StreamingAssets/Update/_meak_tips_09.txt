@@ -55,7 +55,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争中、鬼ヶ淵死守同盟からあれほどまでに攻撃をされた北条家の生き残りが、御三家に保護されているなんて。",
-		   NULL, "Nonostante la famiglia Houjou fosse stata pesantemente ostracizzata durante il conflitto per la diga, Satoko Houjou è comunque sotto la protezione dei suoi vecchi nemici.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nonostante la famiglia Houjou fosse stata pesantemente ostracizzata durante le proteste per la diga, Satoko Houjou è comunque sotto la protezione dei suoi vecchi nemici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

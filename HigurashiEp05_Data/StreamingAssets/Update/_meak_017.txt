@@ -1169,7 +1169,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争に縁がある人間だけが犠牲になると、心のどこかで決め付けていた。",
-		   NULL, "Ho sempre creduto che le vittime fossero persone che avevano una qualche relazione con il conflitto per la diga.", Line_Normal);
+		   NULL, "Ho sempre creduto che le vittime fossero persone che avevano una qualche relazione con le proteste per la diga.", Line_Normal);
 	ClearMessage();
 	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
@@ -1204,7 +1204,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、それでも、自分はダム戦争の戦犯じゃないから、犠牲者になるなんてことは絶対にないと思ってた。",
-		   NULL, "Ma dato che non mi sono mai ritenuta responsabile di qualche scelleratezza durante il conflitto, non ho neanche mai pensato che sarei potuta diventare io una vittima.", Line_Normal);
+		   NULL, "Ma dato che non mi sono mai ritenuta responsabile di qualche scelleratezza durante le proteste, non ho neanche mai pensato che sarei potuta diventare io una vittima.", Line_Normal);
 	ClearMessage();
 	ModPlayBGM( 0, "kaze", 56, 0, 0 );
 	ModFadeOutBGM( 1, 300, FALSE, 0 );
@@ -1260,7 +1260,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争時にあれだけ暗躍し、大臣の孫すら誘拐してのけた園崎本家なら、できるだろうな、と。",
-		   NULL, "In fondo, sono stati loro a rapire il nipote del Ministro delle Infrastrutture durante il conflitto per la diga. Sarebbero in grado.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "In fondo, sono stati loro a rapire il nipote del Ministro delle Infrastrutture durante le proteste per la diga. Sarebbero in grado.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 0, 300, FALSE );
@@ -2046,7 +2046,7 @@ void main()
 		   NULL, " Qual è il suo scopo?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601483", 256, TRUE);
 	OutputLine(NULL, "　…やっぱりダム戦争のけじめってやつ？」",
-		   NULL, " Una sorta di vendetta per le vicende del conflitto per la diga?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Una sorta di vendetta per le vicende delle proteste per la diga?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2208,7 +2208,7 @@ void main()
 		   NULL, " Cambiamo domanda.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601499", 256, TRUE);
 	OutputLine(NULL, "今年の祟りの、富竹さんと鷹野さんはダム戦争に直接関係してないのに、なぜ犠牲に選ばれたの？",
-		   NULL, " Perché Tomitake-san e Takano-san sono stati scelti per essere le vittime di quest'anno, pur non avendo avuto niente a che fare con il conflitto per la diga?", Line_WaitForInput);
+		   NULL, " Perché Tomitake-san e Takano-san sono stati scelti per essere le vittime di quest'anno, pur non avendo avuto niente a che fare con le proteste per la diga?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601500", 256, TRUE);
 	OutputLine(NULL, "　……やっぱり、祭具殿に忍び込んだから？」",
 		   NULL, " È perché si sono intrufolati nel magazzino rituale?\"", GetGlobalFlag(GLinemodeSp));

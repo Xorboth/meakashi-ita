@@ -582,7 +582,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争の時以来の村の仇敵に次々と制裁を下していく。",
-		   NULL, "Tutti i suoi nemici dei tempi del conflitto per la diga sono stati puniti duramente.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tutti i suoi nemici dei tempi delle proteste per la diga sono stati puniti duramente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

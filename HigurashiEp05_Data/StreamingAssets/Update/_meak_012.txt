@@ -726,7 +726,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…北条家は、ダム戦争の時、村を裏切った裏切り者の一家。",
-		   NULL, "... la famiglia Houjou è vista come traditrice del villaggio sin dai giorni del conflitto per la diga.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... la famiglia Houjou è vista come traditrice del villaggio sin dai giorni delle proteste per la diga.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2522,7 +2522,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もともと左手は拘束具で固定されていて、大した抵抗はできない。",
-		   NULL, "Ho la meno bloccata dai legacci e non riesco a muoverla.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ho la mano bloccata dai legacci e non riesco a muoverla.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -1105,7 +1105,7 @@ void main()
 		   NULL, "\"... beh, la vittima era pur sempre un Houjou.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700346", 256, TRUE);
 	OutputLine(NULL, "ダム戦争の戦犯と縁がないわけじゃないですからね。",
-		   NULL, " Per quanto indirettamente, era invischiata nel conflitto per la diga.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Per quanto indirettamente, era invischiata nelle proteste per la diga.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700347", 256, TRUE);
 	OutputLine(NULL, "しかもまたしても綿流しの日にとなれば、面白がる連中が現われるのも、無理もないことです。」",
@@ -1398,7 +1398,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争時の遺恨というラインからこれらをなぞると、それらは簡単にまとめられた。",
-		   NULL, "Se consideriamo che ogni morte è nata a causa del conflitto per la diga, diventa tutto chiaro.", Line_Normal);
+		   NULL, "Se consideriamo che ogni morte è nata a causa delle proteste per la diga, diventa tutto chiaro.", Line_Normal);
 	ClearMessage();
 	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/damu2", 200 );
@@ -1462,7 +1462,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実際、ダム戦争中は北条家を徹底的に叩き、ある種の見せしめにすることで、ダム賛成派が現われるのを抑止していた。",
-		   NULL, "La famiglia Houjou fu perseguitata duramente durante il conflitto, in modo da impedire che altri attivisti pro-diga osassero esporre le loro opinioni.", Line_Normal);
+		   NULL, "La famiglia Houjou fu perseguitata duramente durante le proteste, in modo da impedire che altri attivisti pro-diga osassero esporre le loro opinioni.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
 
@@ -1495,7 +1495,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この２つが２年かけて祟りに遭い、ダム戦争の怨念は清算されたかに見えた。",
-		   NULL, "Con le loro morti nei due anni a cavallo tra l'inizio e la fine del conflitto, sembrava che tutto fosse tornato alla normalità.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Con le loro morti nei due anni a cavallo tra l'inizio e la fine delle proteste, sembrava che tutto fosse tornato alla normalità.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
