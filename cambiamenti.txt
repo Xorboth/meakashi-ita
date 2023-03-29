@@ -1,3 +1,6 @@
+1.0.2 [XX-XX-2023]:
+ - Aggiornata la traduzione all'ultima versione della patch per Meakashi di 07th-Mod (commit 38516d0dae8b0786e6ab8777ec86c3ab6a7659ea del 08-03-2023)
+
 1.0.1 [15-08-2022]:
  - Aggiornata la traduzione, correggendo dei termini ricorrenti tra i vari capitoli e alcuni errori segnalati
  - Aggiunti sharedassets per alcune vecchie versioni del gioco, correggendo l'errore che ne impediva l'apertura
