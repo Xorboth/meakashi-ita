@@ -1746,7 +1746,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200089", 256, TRUE);
 	OutputLine(NULL, "……心の中のオヤシロさまに、雛見沢に帰れ、帰れって何度も呼びかけられてた。",
-		   NULL, "Oyashiro-sama mi ripeteva spesso, nella mia testa, di fare ritorno a Hinamiazawa......", Line_WaitForInput);
+		   NULL, "Oyashiro-sama ripeteva spesso, nella mia testa, di fare ritorno a Hinamizawa......", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200090", 256, TRUE);
 	OutputLine(NULL, "………でも、小学生の子が泣きながら元の町に帰りたいって泣いたって、どうにもならないもんね。",
 		   NULL, " ma non potevo mica farlo, perché ero solo una bambina che piangeva perché voleva tornare alla sua vecchia casa...", GetGlobalFlag(GLinemodeSp));
