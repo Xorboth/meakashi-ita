@@ -1255,7 +1255,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　毎年の連続怪死事件を裏で操る園崎本家なら、できるだろうな、と。",
-		   NULL, "Sono sempre stati loro a tirare le fila dietro alla serie di morti misteriose. Loro avrebbero i mezzi per riuscirci.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sono sempre stati loro a muovere i fili dietro alla serie di morti misteriose. Loro avrebbero i mezzi per riuscirci.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1901,10 +1901,17 @@ void main()
 		   NULL, "Mion non dice niente, rimanendo a fissarmi in attesa del resto.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_017_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_017_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4092", 256, TRUE);
+	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
+		   NULL, "\"E Tomitake-san, invece? Si è dilaniato la gola con le proprie mani o sbaglio?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4093", 256, TRUE);
+	OutputLine(NULL, "　狂気に駆り立てるような怪しいお薬でも注射したの？",
+		   NULL, " Gli avete fatto una qualche iniezione che l'ha fatto impazzire?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4094", 256, TRUE);
+	OutputLine(NULL, "　それとも、そういう死に方に見せるような拷問道具でもあるわけ？」",
+		   NULL, " Oppure esiste uno strumento di tortura appositamente a questo scopo?\"", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は答えなかった。",

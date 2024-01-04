@@ -40,17 +40,6 @@ void dialog002()
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601468", 256, TRUE);
-	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
-		   NULL, "\"E Tomitake-san, invece? Si è dilaniato la gola con le proprie mani o sbaglio?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601469", 256, TRUE);
-	OutputLine(NULL, "　意識をおかしくさせるような怪しいお薬でも注射したの？",
-		   NULL, " Gli avete fatto una qualche iniezione che l'ha fatto impazzire?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601470", 256, TRUE);
-	OutputLine(NULL, "　それとも、そういう死に方に見せるような道具でもあるわけ？」",
-		   NULL, " Oppure esiste uno strumento di tortura appositamente con questo scopo?\"", Line_Normal);
-	ClearMessage();
 }
 
 void dialog004()

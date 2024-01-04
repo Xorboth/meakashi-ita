@@ -597,10 +597,11 @@ void main()
 	ModPlayBGM( 0, "msys30", 56, 0, 0 );
 	ModPlayBGM( 0, "depressive paranoia", 56, 0, 1 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4100", 256, TRUE);
+	OutputLine(NULL, "「鬼婆さま、そろそろ目を覚まして下さいません？」",
+		   NULL, "\"Vecchia, quanto ancora hai intenzione di dormire?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 0, "wa_005", 56, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -615,7 +616,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601522", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4100_150601522", 256, TRUE);
 	OutputLine(NULL, "「……ひょっとして、眠ったふりをしてやり過ごそうとか考えてません？」",
 		   NULL, "\"Non dirmi che pensi di cavartela facendo finta di dormire, eh?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -673,13 +674,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601523", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4101", 256, TRUE);
 	OutputLine(NULL, "「見えてます？",
 		   NULL, "\"Lo vedi?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601524", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4102", 256, TRUE);
 	OutputLine(NULL, "　見えてない？",
 		   NULL, " Oppure no?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601525", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4103", 256, TRUE);
 	OutputLine(NULL, "　これ、誰の忘れ物かわかりませんけどね、ジッポです。」",
 		   NULL, " Questo è un accendino che qualcuno ha lasciato qui.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -690,16 +691,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601526", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4104", 256, TRUE);
 	OutputLine(NULL, "「今からこれであなたの鼻を焼きます。",
 		   NULL, "\"Adesso ti brucerò il naso.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601527", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4105", 256, TRUE);
 	OutputLine(NULL, "嫌でしょ？",
 		   NULL, " Non vuoi che succeda, vero?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601528", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4106", 256, TRUE);
 	OutputLine(NULL, "　私も嫌です。",
 		   NULL, " Nemmeno io lo voglio.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601529", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4107", 256, TRUE);
 	OutputLine(NULL, "ですから寝たふりをやめてください。」",
 		   NULL, " Quindi perché non la smetti di far finta di dormire?\"", Line_Normal);
 	ClearMessage();
@@ -1075,10 +1076,17 @@ void main()
 		   NULL, "Me le scrollo di dosso in modo quasi isterico.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4108", 256, TRUE);
+	OutputLine(NULL, "「……はぁ………はぁ……。",
+		   NULL, "\"Anf, anf... anf...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4109", 256, TRUE);
+	OutputLine(NULL, "………………思い知ったか、",
+		   NULL, " ..... te lo sei meritato,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4110", 256, TRUE);
+	OutputLine(NULL, "………鬼婆…。」",
+		   NULL, " vecchia megera...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は両手を膝に付きながら、ぜいぜいと荒い息を漏らす。",
@@ -1344,14 +1352,14 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601547", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4111", 256, TRUE);
 	OutputLine(NULL, "「魅音。",
 		   NULL, "\"Mion...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601548", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4112", 256, TRUE);
 	OutputLine(NULL, "………昔、親戚の誰かが言ってたじゃん？",
 		   NULL, " ricordi se un nostro parente ha mai parlato di un pozzo antico?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601549", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4113", 256, TRUE);
 	OutputLine(NULL, "　この地下拷問室のどこかに隠し井戸があって、外へ出られる秘密の通路があるって話。」",
 		   NULL, "Dovrebbe esserci un pozzo nascosto qui, da qualche parte nella sala delle torture, collegato a un passaggio segreto...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1362,10 +1370,40 @@ void main()
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4114", 256, TRUE);
+	OutputLine(NULL, "「さっきの音は聞こえてなかった？",
+		   NULL, "\"Hai sentito quel rumore di prima?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4115", 256, TRUE);
+	OutputLine(NULL, "　鬼婆を鞭で叩く音。」",
+		   NULL, " Ero io che frustavo la vecchia.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion4012", 256, TRUE);
+	OutputLine(NULL, "「………………。」",
+		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音は答えないが、唇をぎゅっと噛むのが分かった。",
+		   NULL, "Mion non risponde, ma la vedo mordersi il labbro.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4116", 256, TRUE);
+	OutputLine(NULL, "「大丈夫。",
+		   NULL, "\"Sta' tranquilla.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4117", 256, TRUE);
+	OutputLine(NULL, "あんたは叩かない。",
+		   NULL, " Non frusterò anche te.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4118", 256, TRUE);
+	OutputLine(NULL, "でもね、あんたが不愉快だと、鬼婆をもっと叩くかもしれない。",
+		   NULL, " Ma se non mi aiuterai, rischio di doverla punire ancora un po'.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4119", 256, TRUE);
+	OutputLine(NULL, "今度は鞭なんかじゃなくて、」",
+		   NULL, " E non mi limiterò alla frusta.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300387", 256, TRUE);
@@ -1546,10 +1584,14 @@ void main()
 		   NULL, "\"No, e nemmeno voglio farlo...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_018_vm00_n01","dialog004");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4120", 256, TRUE);
+	OutputLine(NULL, "「あはは、それに関しては著しく同感。",
+		   NULL, "\"Ahahah, non potrei essere più d'accordo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4121", 256, TRUE);
+	OutputLine(NULL, "この拷問室の犠牲者たちが放り込まれた井戸になんか、好きこのんで降りたくはないもんね。」",
+		   NULL, " Perché dovrei scendere in un pozzo dove vengono gettate tutte le vittime della sala delle torture?\"", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は拷問室に戻り、鬼婆の車椅子を押しながら大空洞に戻る。",
@@ -1573,10 +1615,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601559", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4122", 256, TRUE);
 	OutputLine(NULL, "「落すんじゃないよ、捨てるんだよ。",
 		   NULL, "\"No, voglio disfarmi del suo cadavere.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601560", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4123", 256, TRUE);
 	OutputLine(NULL, "もう死んでるしね。」",
 		   NULL, " Ormai è morta.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1588,15 +1630,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601561", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4124", 256, TRUE);
 	OutputLine(NULL, "「さっきの拷問で死んだんじゃないよ。",
 		   NULL, "\"Non l'ho torturata a morte.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601562", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4125", 256, TRUE);
 	OutputLine(NULL, "多分、鬼婆はスタンガンで死んだんだよ。",
 		   NULL, " Dev'essere stata la stun gun.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601563", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4126", 256, TRUE);
 	OutputLine(NULL, "心臓マヒとかで。",
-		   NULL, " Forse il suo cuore non ha retto.", Line_Continue);
+		   NULL, " Forse il suo cuore non ha retto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4127", 256, TRUE);
 	OutputLine(NULL, "…放置してもいいけど、虫が湧くと嫌でしょ？」",
 		   NULL, " Avrei potuto lasciare il corpo lì, ma puzza quando inizia a marcire, sai?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1607,10 +1650,17 @@ void main()
 		   NULL, "\"...... che orrore......\"", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog005");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_018_vm00_n01","dialog005");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4128", 256, TRUE);
+	OutputLine(NULL, "「何なら、死後の鬼婆の世話もする？",
+		   NULL, "\"Vorresti occuparti di lei anche da morta?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4129", 256, TRUE);
+	OutputLine(NULL, "　湧いてくるウジを箸で摘んで捨てるとかやってみる？",
+		   NULL, " Potresti per toglierle le larve di dosso con le bacchette, che ne dici?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4130", 256, TRUE);
+	OutputLine(NULL, "　ん？！」",
+		   NULL, " Allora?!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は両耳を覆うと、聞きたくないとでも言うように、首をぶるぶると振った。",

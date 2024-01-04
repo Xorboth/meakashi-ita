@@ -3951,13 +3951,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601886", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4130_150601886", 256, TRUE);
 	OutputLine(NULL, "「………今ね、村中でおじいちゃんの姿が見えなくなったって大騒ぎしてますよ？",
 		   NULL, "\"Hanno tutti alzato un gran polverone perché non riescono a trovarti.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601887", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4130_150601887", 256, TRUE);
 	OutputLine(NULL, "　おじいちゃんの家から相談が来たので、青年団を召集して捜索を行なうことにしました。",
 		   NULL, " La tua famiglia mi ha chiamato, così gli ho suggerito di radunare il comitato giovanile e di partire alla tua ricerca.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601888", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4130_150601888", 256, TRUE);
 	OutputLine(NULL, "これから行って来るところです。」",
 		   NULL, " Stavo giusto per raggiungerli anch'io.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3974,13 +3974,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601889", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4144", 256, TRUE);
 	OutputLine(NULL, "「鎖、少し長くしてあげましょうか？",
 		   NULL, "\"La catena è troppo corta?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601890", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4145", 256, TRUE);
 	OutputLine(NULL, "　私の質問にちゃんと答えてくれる度に、そうですね、鎖の輪っか、１個分長くしてあげます。",
 		   NULL, " Perché non aggiungere un anello ogni volta che rispondi a una mia domanda?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601891", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4146", 256, TRUE);
 	OutputLine(NULL, "…あと３個も長くなれば、だいぶ楽になると思うんですけどね？」",
 		   NULL, " Te ne basterebbero tre per poterti sentire molto meglio.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

@@ -2697,59 +2697,59 @@ void main()
 	ModDrawCharacter(2, 9, "sprite/ta1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/150900051", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4000", 256, TRUE);
 	OutputLine(NULL, "「ありがとう。",
 		   NULL, "\"Grazie.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900052", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4001", 256, TRUE);
 	OutputLine(NULL, "じゃ、続けるわね。",
 		   NULL, " Allora, vediamo...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900053", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4002", 256, TRUE);
 	OutputLine(NULL, "……古代の村人たちにはね、人を食らう食人の習慣があったらしいの。",
 		   NULL, " gli antichi abitanti del villaggio erano dediti al cannibalismo.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900054", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4003", 256, TRUE);
 	OutputLine(NULL, "そして、その食人の儀式を様式化し、様々なセレモニーや文化、風習を生み出したと言われている。",
 		   NULL, " Per loro era un rituale sacro e veniva performato attraverso varie cerimonie.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900055b", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4004", 256, TRUE);
 	OutputLine(NULL, "私たちが６月のお祭りだと思っている綿流しだって、本来はちょっと早い夏祭りなんかでは断じてない。",
 		   NULL, " Il Watanagashi che si tiene a giugno, non è un comune festival estivo.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/150900056", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4005", 256, TRUE);
 	OutputLine(NULL, "本来は犠牲者をさらい、食べるために行なう食人の宴だった。",
 		   NULL, "In tempi lontani, era un macabro banchetto in cui gli abitanti inseguivano e divoravano i sacrifici offerti loro...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900057", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4006", 256, TRUE);
 	OutputLine(NULL, "…彼らはね、犠牲者を拘束台に縛りつけ、お魚をおろす時みたいに、ハラワタを引きずり出してそれを川に投げ捨てたとされている。",
 		   NULL, " li legavano a un tavolo, li evisceravano come pesci e gettavano le loro interiora dentro al fiume.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/150900058", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4007", 256, TRUE);
 	OutputLine(NULL, "ほら、魚のハラワタって、ワタって言うじゃない？",
 		   NULL, "Wata' significa sì 'cotone', ma anche 'organi interni'.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900059", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4008", 256, TRUE);
 	OutputLine(NULL, "　それが語源よ、綿流しの。」",
 		   NULL, " È questo il significato originale della parola 'Watanagashi'.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601234", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4085", 256, TRUE);
 	OutputLine(NULL, "「ワタ、流し…。」",
 		   NULL, "\"Organi alla deriva... Watanagashi...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/150900060", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4009", 256, TRUE);
 	OutputLine(NULL, "「そうよ。",
 		   NULL, "\"Esatto.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900061", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4010", 256, TRUE);
 	OutputLine(NULL, "お布団の綿なんかで誤魔化すようになったのは、私の研究では明治の頃からじゃないかと思うわね。",
 		   NULL, " Stando alle mie ricerche, ritengo che l'utilizzo di futon per nascondere questa tradizione sanguinosa sia iniziato nel Periodo Meiji.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900062", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4011", 256, TRUE);
 	OutputLine(NULL, "まさかこの昭和の時代に、そんな恐ろしいことが堂々とできるわけもないのだし。」",
 		   NULL, " Questo perché, ovviamente, certe cose sarebbero criminali e inammissibili al giorno d'oggi.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601235", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4086", 256, TRUE);
 	OutputLine(NULL, "「…………………。」",
 		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2911,55 +2911,55 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900072", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4012", 256, TRUE);
 	OutputLine(NULL, "「そうね。",
 		   NULL, "\"Esattamente.", Line_WaitForInput);
 	PlaySE( 0, "s_page", 56, 64 );
 
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900073", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4013", 256, TRUE);
 	OutputLine(NULL, "でね、オヤシロさまの祟りというのは、放置してはいけないの。",
 		   NULL, " L'ira di Oyashiro-sama dev'essere placata.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900074", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4014", 256, TRUE);
 	OutputLine(NULL, "“もっともっと大きな祟りを招く”からね。",
 		   NULL, " Altrimenti, seguirà qualcosa di molto più terribile.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900075", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4015", 256, TRUE);
 	OutputLine(NULL, "だから、神職である古手家の歴代頭首たちは、オヤシロさまの祟りがある度に、そのお怒りを鎮めるために、生贄を捧げる必要があったの。",
 		   NULL, "Ecco perché i sacerdoti che ereditarono nel tempo il santuario Furude dovevano offrire qualcuno in sacrificio ogni volta che la maledizone colpiva: per placare l'ira di Oyashiro-sama.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900076", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4016", 256, TRUE);
 	OutputLine(NULL, "それを生贄の儀と呼ぶみたいなんだけどね…。」",
 		   NULL, " Viene definito anche 'sacrificio rituale'.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601242", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4087", 256, TRUE);
 	OutputLine(NULL, "「じゃあつまり………、毎年、綿流しの日にオヤシロさまの祟りで１人死んで。",
 		   NULL, "\"In parole povere...... ogni anno, il giorno del Watanagashi, qualcuno muore a causa della maledizione", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601243", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4088", 256, TRUE);
 	OutputLine(NULL, "その祟りを鎮めるために、さらにもう１人を生贄にして殺してると、そう言うんですか？！",
 		   NULL, " e qualcun altro dev'essere sacrificato per placare l'ira di Oyashiro-sama?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601244", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4089", 256, TRUE);
 	OutputLine(NULL, "　でも、１人しか死んでませんよ現実に。",
 		   NULL, " Ma ogni volta è solo una persona a essere uccisa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601245", 540, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4090", 256, TRUE);
 	OutputLine(NULL, "生贄に捧げられたなんて聞いたこともない…！」",
 		   NULL, "Non ne sapevo nulla di questa storia dei sacrifici!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900077", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4017", 256, TRUE);
 	OutputLine(NULL, "「死体が出ないのは当然よ。",
 		   NULL, "\"È naturale che i corpi dei sacrificati non vengano mai ritrovati.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900078", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4018", 256, TRUE);
 	OutputLine(NULL, "だって、生贄の儀式は、犠牲者を鬼ヶ淵の沼に沈めることなんだもの。",
 		   NULL, " Il rituale necessita di offrire le spoglie della vittima alla palude di Onigafuchi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900079", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4019", 256, TRUE);
 	OutputLine(NULL, "あの沼は、一度沈めば二度と浮き上がることはないと言われる底無しの沼。",
 		   NULL, " La palude è senza fondo, e perciò niente tornerebbe più a galla una volta gettato là dentro.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/150900080", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4020", 256, TRUE);
 	OutputLine(NULL, "……死体なんて、出ようはずもない。」",
 		   NULL, "... di conseguenza, nemmeno i cadaveri.\"", Line_Normal);
 	ClearMessage();
@@ -3008,13 +3008,13 @@ void main()
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900084", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4021", 256, TRUE);
 	OutputLine(NULL, "「そう、つまり。",
 		   NULL, "\"Adesso è più chiaro?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900085", 256, TRUE);
-	OutputLine(NULL, "……雛見沢村連続怪事件というのは、祟りとそれを鎮めるための生贄の２つでセットになったもの。",
+	ModPlayVoiceLS(4, 9, "org/takano4022", 256, TRUE);
+	OutputLine(NULL, "……雛見沢村連続怪死事件というのは、祟りとそれを鎮めるための生贄の２つでセットになったもの。",
 		   NULL, " La serie di morti misteriose è composta da due parti: la maledizione e il sacrificio.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900086", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4023", 256, TRUE);
 	OutputLine(NULL, "そして、それを毎年繰り返すことによって、ダム戦争時の仇敵を、毎年２人ずつ殺していけるシステムのことを指しているの。」",
 		   NULL, " Così, si è creato un sistema per cui ogni anno è possibile sbarazzarsi di due persone che sostenevano il progetto della diga.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

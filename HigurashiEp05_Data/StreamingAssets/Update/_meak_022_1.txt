@@ -1099,6 +1099,6 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はテレビでも見ながらのんびりと電話が来るまで時間をつぶしていた。",
-		   NULL, "Nel fattempo, passo ammazzo il tempo guardando distrattamente la TV.", Line_Normal);
+		   NULL, "Nel frattempo, mi distraggo guardando la TV.", Line_Normal);
 	ClearMessage();
 }

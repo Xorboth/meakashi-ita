@@ -1568,10 +1568,14 @@ void main()
 		   NULL, "Ooishi torna con due tazze di caffè servite su un vassoio color argento sbiadito.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmeak_013_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_013_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4083", 256, TRUE);
+	OutputLine(NULL, "「……想像してたより待遇がよくて驚いてます。",
+		   NULL, "\"... mi sta trattando meglio di quanto mi aspettassi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4084", 256, TRUE);
+	OutputLine(NULL, "三角木馬くらいは覚悟してたのに。」",
+		   NULL, " Credevo che mi avrebbe presa a frustate.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");

@@ -2076,10 +2076,14 @@ void main()
 		   NULL, " La incrocio brevemente solo quando scorto vostro padre ai consigli di famiglia.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog000");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4000", 256, TRUE);
+	OutputLine(NULL, "「そっか、お姉はもう実家じゃないんだったね。",
+		   NULL, "\"Giusto. Lei non vive più con i nostri genitori.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4001", 256, TRUE);
+	OutputLine(NULL, "雛見沢の鬼婆のとこだっけ？」",
+		   NULL, " Adesso vive con la vecchia a Hinamizawa, vero?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500022", 256, TRUE);
@@ -3198,16 +3202,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600064", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4007", 256, TRUE);
 	OutputLine(NULL, "「行くって！",
 		   NULL, "\"Funzionerà!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600065", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4008", 256, TRUE);
 	OutputLine(NULL, "　そもそも、私を学園送りにする決定だって、結構みんな反対してくれてたもんね。",
 		   NULL, " In primo luogo, la decisione di mandarmi alla scuola è stata osteggiata da molte persone.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600066", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4009", 256, TRUE);
 	OutputLine(NULL, "あれは私をやたらと嫌った、鬼婆の猜疑心からの決定みたいなもんだったし。",
 		   NULL, " Quella è stata una decisione nata dall'odio e delle paranoie che la vecchia ha nei miei confronti.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600067", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4010", 256, TRUE);
 	OutputLine(NULL, "……葛西もそう思うでしょ？」",
 		   NULL, " ...... non credi anche tu, Kasai?\"", Line_Normal);
 	ClearMessage();
@@ -3221,10 +3225,14 @@ void main()
 		   NULL, " ... anche io ho sempre ritenuto la decisione un po' eccessiva.\"", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog005");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_001_vm00_n01","dialog005");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4011", 256, TRUE);
+	OutputLine(NULL, "「鬼婆はとっくに更年期障害で、正常な思考なんか出来なくなってんの！",
+		   NULL, "\"Ormai la vecchia ha superato la menopausa da un pezzo, ecco perché non riesce a ragionare lucidamente!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4012", 256, TRUE);
+	OutputLine(NULL, "　あのダム戦争の興奮で、頭がイカれちゃって、まだその時の興奮が抜け切ってないんじゃないかな。ったく！」",
+		   NULL, " Il conflitto della diga le ha dato alla testa e ancora non ne ha superato la tensione. Accidenti a lei!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　葛西は、さすがに相槌こそ打てなかったが、苦笑いでそれを肯定してくれていた。",
