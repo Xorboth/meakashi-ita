@@ -1,3 +1,7 @@
+1.0.3 [04-01-2024]:
+ - Aggiornata la traduzione all'ultima versione della patch per Meakashi di 07th-Mod (commit ce5073b6bf137729ddc5e15ac67a96138bef9c0f del 22-07-2023)
+ - Corretti alcuni errori
+
 1.0.2 [27-05-2023]:
  - Aggiornata la traduzione all'ultima versione della patch per Meakashi di 07th-Mod (commit 38516d0dae8b0786e6ab8777ec86c3ab6a7659ea del 08-03-2023)
  - Aggiornata la traduzione, correggendo dei typo in una frase
